@@ -28,30 +28,6 @@ h1 {
     height: 60px;
     border-radius: 50%;
 }
-.main{
-    height: calc(100vh - 81px);
-}
-#sidebar {
-    background-color: #625C5C;
-    height: 100%;
-    width: 150px;
-    float: left;
-}
-#container {
-    background-color: white;
-    float:left;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    width: calc((100vw) - 200px);
-    
-
-}
-#container > h2{
-    color: black;
-    margin: 0;    
-   text-decoration:underline; 
-}
 .green-bg{
     background-color: #0ACE82;
 }
@@ -70,22 +46,57 @@ h1 {
 .gray-bg{
     background-color: #625C5C;
 }
-.firstrow,.secondrow{
-    display: flex;
+#container > h2{
+    color: black;
+    margin: 0 0 15px 0;    
+   text-decoration:underline; 
 }
-.tile{
-    height: 200px;      
+#tilebx{
+    margin-bottom: 15px;
 }
-.firstrow > div,.secondrow > div{
+#tilebx,#circlebx{
+    display: flex;   
+}
+#tilebx > div,#circlebx > div{
     margin-right: 15px;
 }
-.firstrow > div:last-child,.secondrow > :last-child{
+#tilebx > div:last-child,#circlebx > div:last-child {
     margin-right: 0;
 }
 .tile h2,.tile h3{
     color: white;
 }
-.tile,.circle,.chart{
+.main{
+    height: calc(100vh - 81px);
+    position: relative;
+    overflow: hidden;
+}
+#sidebar {
+    background-color: #625C5C;
+    height: 100%;
+    width: 150px;
+    float: left;
+}
+#container {
+    background-color: white;
+    float:left;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 180px);
+
+}
+.tile{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: calc(100% / 4);
+        
+}
+
+.circle,.chart{
     width: calc((100%) / 4);
     margin-top: 15px;
     display: flex;
@@ -181,7 +192,7 @@ h1 {
  #sidebar nav {
     display: flex;
     flex-direction: column;
-    padding: 15px 30px 30px 30px;
+    padding: 25px 30px 30px 30px;
  }
  #sidebar nav a:first-child {
     
@@ -189,6 +200,7 @@ h1 {
  }
  #sidebar  nav a{
     color: white;
+    padding-top: 10px;
  }
  #sidebar nav a.active{
     text-decoration: none;
