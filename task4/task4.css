@@ -41,7 +41,7 @@ h1 {
     background-color: white;
     float:left;
     padding: 15px;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 220px);
     
 
 }
@@ -62,11 +62,17 @@ h1 {
 .cyan-bg{
     background-color:#1ABCFD;
 }
+.orange-bg{
+   background-color: #FF7261;
+}
+.gray-bg{
+    background-color: #625C5C;
+}
 .firstrow,.secondrow{
     display: flex;
 }
 .tile{
-    height: 200px;      
+    height: 250px;      
 }
 .firstrow > div,.secondrow > div{
     margin-right: 15px;
@@ -99,3 +105,93 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+.inner-one > h3 {
+    color: white;
+}
+.inner-two{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+.inner-three {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7261;
+}
+.inner-four {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A159FE;
+}
+.bar {
+   
+    width: 15px;
+    position: absolute;
+}
+.chart {
+    position: relative;
+    display: block;
+}
+.chart div{
+    bottom: 0;
+}
+.one {
+    left: 0;
+    height: calc(100% - 30px);
+}
+.two {
+    left: 35px;
+    height: calc(100% - 10px);
+}
+ .three {
+    left: 70px;
+    height: calc(100% - 40px);
+ }   
+ .four{
+    left: 105px;
+    height: calc(100% - 15px);
+ }
+ .five{
+    left: 140px;
+    height: calc(100% - 60px);
+ }
+ .six{
+    left: 175px;
+    height: calc(100% - 35px);
+ }
+ .line{
+    width: 100%;
+    height: 15px;
+    position: absolute;
+ }
+ #sidebar nav {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px 30px 30px;
+ }
+ #sidebar nav a:first-child {
+    
+    padding: 0;
+ }
+ #sidebar  nav a{
+    color: white;
+ }
+ #sidebar nav a.active{
+    text-decoration: none;
+    color: rgb(62, 215, 62);
+ }
+
+
+ 
