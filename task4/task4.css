@@ -1,0 +1,101 @@
+body{
+    background-color: white;
+    margin: 0 auto;
+}
+#navbar{
+    background-color: #625C5C;
+    height: 80px;
+    border-bottom: 1px solid #ebe6e6;
+}
+#logobx{
+    display: flex;
+    align-self: center;
+    float: left;
+    
+}
+h1 {
+    color: white;
+}
+#profilebx {
+    float: right;
+    width: auto;   
+}
+#logobx img {
+    height: 50px;
+    width: 50px;   
+}
+#profilebx img {
+    height: 60px;
+    border-radius: 50%;
+}
+.main{
+    height: calc(100vh - 81px);
+}
+#sidebar {
+    background-color: #625C5C;
+    height: 100%;
+    width: 150px;
+    float: left;
+}
+#container {
+    background-color: white;
+    float:left;
+    padding: 15px;
+    width: calc(100vw - 200px);
+    
+
+}
+#container > h2{
+    color: black;
+    margin: 0;    
+   text-decoration:underline; 
+}
+.green-bg{
+    background-color: #0ACE82;
+}
+.purple-bg{
+    background-color: #A259FF;
+}
+.red-bg{
+    background-color:#F34E1E ;
+}
+.cyan-bg{
+    background-color:#1ABCFD;
+}
+.firstrow,.secondrow{
+    display: flex;
+}
+.tile{
+    height: 200px;      
+}
+.firstrow > div,.secondrow > div{
+    margin-right: 15px;
+}
+.firstrow > div:last-child,.secondrow > :last-child{
+    margin-right: 0;
+}
+.tile h2,.tile h3{
+    color: white;
+}
+.tile,.circle,.chart{
+    width: calc((100%) / 4);
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle,.chart{
+    height:calc((100vw -200px) / 4);
+}
+.circle{
+    border-radius: 50%;
+}
+.inner-one {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
