@@ -41,7 +41,9 @@ h1 {
     background-color: white;
     float:left;
     padding: 15px;
-    width: calc(100vw - 220px);
+    display: flex;
+    flex-direction: column;
+    width: calc((100vw) - 200px);
     
 
 }
@@ -72,7 +74,7 @@ h1 {
     display: flex;
 }
 .tile{
-    height: 250px;      
+    height: 200px;      
 }
 .firstrow > div,.secondrow > div{
     margin-right: 15px;
@@ -92,7 +94,7 @@ h1 {
     align-items: center;
 }
 .circle,.chart{
-    height:calc((100vw -200px) / 4);
+    height:calc((100vw - 180px) / 4);
 }
 .circle{
     border-radius: 50%;
