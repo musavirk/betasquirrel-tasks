@@ -9,9 +9,11 @@
 |![task-1](task/image4.jpeg) |![out-1](output/image4.jpeg) |
 
 ## Git commands
-- 'git config':- Configure git user
-- 'git clone' :- Clone a repo to local 
-- 'git status':- Display the state of working directory
-- 'git add'   :- Add file changes to git
-- 'git commit':- Commit changes to git
-- 'git push'  :- Push local commit to remote repo
+| Commands    |   Discription                         |
+| ------------|---------------------------------------|
+| `git config`|Configure git user                     |
+| `git clone` | Clone a repo to local                 | 
+| `git status`| Display the state of working directory|
+| `git add`   | Add file changes to git               |  
+| `git commit`| Commit changes to git                 |
+| `git push`  | Push local commit to remote repo      |
