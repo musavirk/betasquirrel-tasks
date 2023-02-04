@@ -1,8 +1,8 @@
 body{
-    background-color: rgb(5, 83, 24);
+    background-color:#a37ef9;
 }
 .main{
-    background-color: rgb(202, 198, 188);
+    background-color: #de5fd6 ;
     height: 200px;
     width: 35%;
     border-radius: 3px;
@@ -13,18 +13,18 @@ body{
     margin-top: 200px;
 }
 a{
-    color: rgb(6, 2, 247);
+    color:#C7EEF5;
     padding: 30px;
-    border: 3px solid rgb(4, 4, 21);
+    border: 3px solid rgb(239, 239, 243);
     text-decoration: none;
     border-radius: 20px;
 }
 a:hover{
-    color: red;
-    background-color: aquamarine;
+    color: rgb(12, 4, 4);
+    background-color:#DF622C;
 }
 a:active{
-    color: aquamarine;
-    background-color: cornflowerblue;
+    color: rgb(1, 17, 12);
+    background-color: #5FC1AA ;
  
 }
