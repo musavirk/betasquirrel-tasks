@@ -1,0 +1,29 @@
+body {
+  background-color: #a37ef9;
+}
+.main {
+  background-color: #de5fd6;
+  height: 200px;
+  width: 35%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 200px;
+}
+a {
+  color: #c7eef5;
+  padding: 30px;
+  border: 3px solid rgb(239, 239, 243);
+  text-decoration: none;
+  border-radius: 20px;
+}
+a:hover {
+  color: rgb(12, 4, 4);
+  background-color: #df622c;
+}
+a:active {
+  color: rgb(1, 17, 12);
+  background-color: #5fc1aa;
+}
