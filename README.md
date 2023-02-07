@@ -2,7 +2,7 @@
 
 ## Demo
 
-[Live](https://github.com/musavirk/betasquirrel-tasks/)
+[Live](https://musavirk.github.io/betasquirrel-tasks/)
 
 ## Task
 
