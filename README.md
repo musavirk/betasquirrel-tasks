@@ -6,11 +6,11 @@
 
 ## Task
 
-| Requirments                 | Output                       |
-| --------------------------- | ---------------------------- |
-| ![task-1](task/image1.jpeg) | ![out-1](output/image1.jpeg) |
-| ![task-2](task/image2.jpeg) | ![out-1](output/image2.jpeg) |
-| ![task-1](task/image4.jpeg) | ![out-1](output/image4.jpeg) |
+| Requirments                           | Output                          |
+| ------------------------------------- | ------------------------------- |
+| ![task-1](images/input-task1%20.jpeg) | ![out-1](images/out-task1.jpeg) |
+| ![task-2](images/input-task2.jpeg)    | ![out-1](images/out-task2.jpeg) |
+| ![task-1](images/input-task4.jpeg)    | ![out-1](images/out-task4.jpeg) |
 
 ## Git commands
 
