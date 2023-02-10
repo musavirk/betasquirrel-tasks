@@ -96,7 +96,8 @@ h1 {
   align-items: center;
   width: calc(100% / 4);
 }
-.circle,.chart {
+.circle,
+.chart {
   width: calc((100%) / 4);
   margin-top: 15px;
   display: flex;
