@@ -96,7 +96,6 @@ h1 {
   align-items: center;
   width: calc(100% / 4);
 }
-
 .circle,
 .chart {
   width: calc((100%) / 4);
