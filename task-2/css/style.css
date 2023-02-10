@@ -1,84 +1,77 @@
 body {
-    background-color: rgba(15, 11, 11, 0.892);
-    margin: 0 auto;
+  background-color: rgba(15, 11, 11, 0.892);
+  margin: 0 auto;
 }
 
 #title {
-    background-color: rgba(182, 36, 195, 0.942);
-    height: 80px;
-    margin-bottom: 15px;
-    display: flex;
-    align-self: center;
+  background-color: rgba(182, 36, 195, 0.942);
+  height: 80px;
+  margin-bottom: 15px;
+  display: flex;
+  align-self: center;
 }
 .left {
-    float: left;
-    width: 20%;
-    display: flex;
-    align-self: center;
+  float: left;
+  width: 20%;
+  display: flex;
+  align-self: center;
 }
 .right {
-    float: left; 
-    width: auto;
-    display: flex;
-    align-self: center;   
-   
-    
+  float: left;
+  width: auto;
+  display: flex;
+  align-self: center;
 }
-.left img{
-    height: 50px;
-    align-self: center;
+.left img {
+  height: 50px;
+  align-self: center;
 }
-.left h1{
-    color: aliceblue;
+.left h1 {
+  color: aliceblue;
 }
-.right a{
-    color: aliceblue;
-    padding:  0 20px;
-    text-decoration: none;
-
+.right a {
+  color: aliceblue;
+  padding: 0 20px;
+  text-decoration: none;
 }
-.right a:hover{
-    background-color: blue;
-    color: blueviolet;
-    padding: 20px;
+.right a:hover {
+  background-color: blue;
+  color: blueviolet;
+  padding: 20px;
 }
 .main {
-    background-color: rgb(229, 232, 235);
-    height: 300px;
-    padding: 10px;
-    margin-bottom: 15px;
-    margin: 10px;
-    align-self: center;
+  background-color: rgb(229, 232, 235);
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin: 10px;
+  align-self: center;
 }
 .b1 {
-    background-color: rgb(65, 232, 76);
-    height: 200px;
-    float: left;
-    width: 30%;
-    padding: 20px;
-    margin: 20px;
+  background-color: rgb(65, 232, 76);
+  height: 200px;
+  float: left;
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
 }
 
 .b2 {
-    background-color: rgb(65, 232, 76);
-    height: 200px;
-    float: right;
-    width: 30%;
-    padding: 20px;
-    margin: 20px;
-
+  background-color: rgb(65, 232, 76);
+  height: 200px;
+  float: right;
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
 }
-#b{
-    border:6px ;
+#b {
+  border: 6px;
 }
 
 #finalbox {
-    height: 300px;
-    background-color: antiquewhite;
-    margin: 5px;
-    border: 15px solid rgb(211, 85, 85);
-    padding: 10px;
-    
-
+  height: 300px;
+  background-color: antiquewhite;
+  margin: 5px;
+  border: 15px solid rgb(211, 85, 85);
+  padding: 10px;
 }
-
