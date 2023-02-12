@@ -65,3 +65,11 @@ Read the below links
 - [HTML Table Colspan & Rowspan](https://www.w3schools.com/html/html_table_colspan_rowspan.asp)
 - [HTML Table Styling](https://www.w3schools.com/html/html_table_styling.asp)
 - [HTML Table Colgroup](https://www.w3schools.com/html/html_table_colgroup.asp)
+
+## Linkedin
+
+-[Linkedin](https://www.linkedin.com/in/musavir-k-6a5a46219/)
+
+## Stack overflow
+
+-[Stack overflow](https://stackoverflow.com/users/21194139/musavir-k)
