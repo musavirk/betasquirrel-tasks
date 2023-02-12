@@ -68,8 +68,8 @@ Read the below links
 
 ## Linkedin
 
--[Linkedin](https://www.linkedin.com/in/musavir-k-6a5a46219/)
+[Linkedin](https://www.linkedin.com/in/musavir-k-6a5a46219/)
 
 ## Stack overflow
 
--[Stack overflow](https://stackoverflow.com/users/21194139/musavir-k)
+[Stack overflow](https://stackoverflow.com/users/21194139/musavir-k)
