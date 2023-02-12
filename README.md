@@ -9,8 +9,8 @@
 | Requirments                           | Output                          |
 | ------------------------------------- | ------------------------------- |
 | ![task-1](images/input-task1%20.jpeg) | ![out-1](images/out-task1.jpeg) |
-| ![task-2](images/input-task2.jpeg)    | ![out-1](images/out-task2.jpeg) |
-| ![task-1](images/input-task4.jpeg)    | ![out-1](images/out-task4.jpeg) |
+| ![task-2](images/input-task2.jpeg)    | ![out-2](images/out-task2.jpeg) |
+| ![task-4](images/input-task4.jpeg)    | ![out-4](images/out-task4.jpeg) |
 
 ## Git commands
 
