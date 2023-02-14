@@ -71,6 +71,7 @@ h1 {
 }
 .main {
   height: calc(100vh - 81px);
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -87,6 +88,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: calc(100vw - 240px);
+  justify-content: space-between;
 }
 .tile {
   height: 200px;
