@@ -77,7 +77,7 @@ h1 {
 #sidebar {
   background-color: #625c5c;
   height: 100%;
-  width: 150px;
+  width: 200px;
   float: left;
 }
 #container {
@@ -86,7 +86,7 @@ h1 {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 180px);
+  width: calc(100vw - 240px);
 }
 .tile {
   height: 200px;
@@ -107,7 +107,7 @@ h1 {
 }
 .circle,
 .chart {
-  height: calc((100vw - 180px) / 4);
+  height: calc((100vw - 240px) / 4);
 }
 .circle {
   border-radius: 50%;
