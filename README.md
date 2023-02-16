@@ -14,14 +14,19 @@
 
 ## Git commands
 
-| Commands     | Discription                            |
-| ------------ | -------------------------------------- |
-| `git config` | Configure git user                     |
-| `git clone`  | Clone a repo to local                  |
-| `git status` | Display the state of working directory |
-| `git add`    | Add file changes to git                |
-| `git commit` | Commit changes to git                  |
-| `git push`   | Push local commit to remote repo       |
+| Commands       | Discription                                          |
+| -------------- | ---------------------------------------------------- |
+| `git config`   | Configure git user                                   |
+| `git clone`    | Clone a repo to local                                |
+| `git status`   | Display the state of working directory               |
+| `git add`      | Add file changes to git                              |
+| `git commit`   | Commit changes to git                                |
+| `git push`     | Push local commit to remote repo                     |
+| `git checkout` | To checking out old commits and old file revisions   |
+| `git clean`    | Removes untracked files from the working directory   |
+| `git init`     | Initializes a new Git repository                     |
+| `git log`      | Lets you explore the previous revisions of a project |
+| `git pull`     | Pulling is the automated version of git fetch        |
 
 ## Linux commands
 
