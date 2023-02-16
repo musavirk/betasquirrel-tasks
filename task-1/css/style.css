@@ -11,16 +11,19 @@ body {
 #main {
   background-color: #d3d7e6;
   height: 300px;
+  width: 100vw;
   margin-bottom: 15px;
   overflow: hidden;
 }
 .box {
   background-color: #d3d7e6;
-  height: 300px;
   border: 1px solid green;
   float: left;
   width: calc((100vw / 3) - 30px);
+  height: 300px;
   padding: 4px;
+  overflow: hidden;
+  margin: 0px;
 }
 .first {
   margin-left: 0px;
@@ -68,4 +71,10 @@ a:hover {
 }
 a:active {
   color: red;
+}
+@media only screen and (max-width: 650px) {
+  .right {
+    display: none;
+    height: fit-content;
+  }
 }
