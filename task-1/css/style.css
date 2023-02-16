@@ -76,4 +76,8 @@ a:active {
   .right {
     display: none;
   }
+  .box {
+    width: 100vw;
+    margin-bottom: 15px;
+  }
 }
