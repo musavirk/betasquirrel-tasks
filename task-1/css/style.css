@@ -75,6 +75,5 @@ a:active {
 @media only screen and (max-width: 650px) {
   .right {
     display: none;
-    height: fit-content;
   }
 }

@@ -76,6 +76,5 @@ body {
 @media only screen and (max-width: 650px) {
   .second {
     display: none;
-    height: fit-content;
   }
 }
