@@ -3,8 +3,8 @@ body {
 }
 .main {
   background-color: #de5fd6;
-  height: 200px;
-  width: 35%;
+  height: 300px;
+  width: 50%;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 a {
   color: #c7eef5;
-  padding: 30px;
+  padding: 25px;
   border: 3px solid rgb(239, 239, 243);
   text-decoration: none;
   border-radius: 20px;
@@ -26,4 +26,10 @@ a:hover {
 a:active {
   color: rgb(1, 17, 12);
   background-color: #5fc1aa;
+}
+@media only screen and (max-width: 680px) {
+  a {
+    display: flex;
+    flex-direction: row;
+  }
 }
