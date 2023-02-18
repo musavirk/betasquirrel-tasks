@@ -1,11 +1,12 @@
 body {
   background-color: #331919;
-  margin: 0 auto;
+  margin: 0;
 }
 #title {
   background-color: #533261;
   height: 80px;
-  margin-bottom: 15px;
+  width: 100vw;
+  margin: 15px 0 15px 0;
   display: flex;
   align-self: center;
 }
@@ -40,10 +41,11 @@ body {
 .main {
   background-color: rgb(229, 232, 235);
   height: 300px;
+  width: calc(100vw - 30px);
   padding: 10px;
-  margin-bottom: 15px;
-  margin: 10px;
+  margin: 15px 0 15px 0;
   align-self: center;
+  overflow: hidden;
 }
 .b1 {
   background-color: #85df7f;
@@ -51,7 +53,8 @@ body {
   float: left;
   width: 30%;
   padding: 20px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
   overflow: hidden;
 }
 .b2 {
@@ -60,7 +63,8 @@ body {
   float: right;
   width: 30%;
   padding: 20px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
   overflow: hidden;
 }
 #b {
@@ -68,8 +72,9 @@ body {
 }
 #finalbox {
   height: 300px;
+  width: calc(100vw - 53px);
   background-color: #dadada;
-  margin: 5px;
+  margin: 0;
   border: 15px solid #bb413f;
   padding: 10px;
 }
