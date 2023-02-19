@@ -5,6 +5,7 @@ body {
 #firstbox {
   background-color: #543561;
   height: 80px;
+  width: 100vw;
   border: 2px solid rgb(17, 12, 3);
   margin-bottom: 15px;
 }
@@ -23,7 +24,7 @@ body {
   height: 300px;
   padding: 4px;
   overflow: hidden;
-  margin: 0px;
+  margin-bottom: 0px;
 }
 .first {
   margin-left: 0px;
