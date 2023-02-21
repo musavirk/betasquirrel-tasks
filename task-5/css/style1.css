@@ -54,3 +54,6 @@ h3 {
   padding: 3px;
   color: #535353;
 }
+table {
+  width: calc(100vw - 201px);
+}
