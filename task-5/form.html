@@ -28,51 +28,46 @@
       <div class="main">
         <div class="head"><h3>STUDENT REGISTRATION</h3></div>
         <div class="form-1">
-          <div class="first">
-            <label for="fname">First Name:<span>*</span></label>
-            <input type="text" id="fname" placeholder="Enter your first name" />
+          <div class="first fname">
+            <form action="">
+              <label for="fname">First Name: <span>*</span></label>
+              <input type="text" placeholder="Enter your First name" />
+            </form>
           </div>
-          <div class="second">
-            <label for="lname">Last Name:<span>*</span></label>
-            <input type="text" id="lname" placeholder="Enter your lasst name" />
+          <div class="second lname">
+            <form action="">
+              <label for="lname">Last Name: <span>*</span></label>
+              <input type="text" placeholder="Enter your Last name" />
+            </form>
           </div>
         </div>
         <div class="form-2">
-          <div class="first">
-            <label for="mobile">Mobile:<span>*</span></label>
-            <input
-              type="tel"
-              id="mobile"
-              placeholder="Enter your mobile number"
-            />
+          <div class="first mobile">
+            <form action="">
+              <label for="mobile">Mobile: <span>*</span></label>
+              <input type="tel" placeholder="Enter your number" />
+            </form>
           </div>
-          <div class="second">
-            <label for="email">Email:<span>*</span></label>
-            <input type="text" id="email" placeholder="Enter your email id" />
+          <div class="second email">
+            <form action="">
+              <label for="email">Email: <span>*</span></label>
+              <input type="email" placeholder="Enter your email" />
+            </form>
           </div>
         </div>
         <div class="form-3">
-          <div class="first">
-            <label for="branch">Branch:<span>*</span></label>
-            <select name="branch" id="branch">
-              Branch:<span>*</span>
-              <option value="select" disabled selected>Select</option>
-              <option value="CSE">Computer science</option>
-              <option value="EEE">Electrical</option>
+          <div class="first subject">
+            <select name="subject" id="subject">
+              Select Subject:
+              <span>*</span>
             </select>
+            <option value="Maths">MAths</option>
+            <option value="English">English</option>
           </div>
-          <div class="second">
-            <div>
-              <p>Do you need hostel facility</p>
-            </div>
-            <div>
-              <input type="radio" id="yes" name="hostel" value="yes" />
-              <label for="yes">Yes</label>
-              <input type="radio" id="no" name="hostel" value="no" />
-              <label for="no">No</label>
-            </div>
-          </div>
+          <div class="second hostel"></div>
         </div>
+        <div class="checkbx"></div>
+        <div class="address"></div>
       </div>
     </div>
   </body>

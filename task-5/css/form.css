@@ -70,8 +70,5 @@ span {
 .form-3 {
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px;
-}
-.form-3 .second {
-  display: block;
+  padding: 20px 400px 20px 20px;
 }
