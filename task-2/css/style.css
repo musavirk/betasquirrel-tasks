@@ -46,12 +46,13 @@ body {
   margin: 15px 0 15px 0;
   align-self: center;
   overflow: hidden;
+  justify-content: space-between;
 }
 .b1 {
   background-color: #85df7f;
   height: 200px;
   float: left;
-  width: 30%;
+  width: calc((100% - 200px) / 2);
   padding: 20px;
   margin-top: 20px;
   margin-left: 20px;
@@ -61,7 +62,7 @@ body {
   background-color: #85df7f;
   height: 200px;
   float: right;
-  width: 30%;
+  width: calc((100% - 200px) / 2);
   padding: 20px;
   margin-top: 20px;
   margin-right: 20px;
@@ -78,24 +79,25 @@ body {
   border: 15px solid #bb413f;
   padding: 10px;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 767px) {
   .second {
     display: none;
   }
   .main {
+    width: 100vw;
     height: 500px;
     padding: 0;
   }
   .b1 {
-    display: block;
     width: 100vw;
+    height: 150px;
     margin: 20px 0 20px 0;
-    padding: 20px;
+    padding: 40px;
   }
   .b2 {
-    display: block;
     width: 100vw;
+    height: 150px;
     margin: 20px 0 20px 0;
-    padding: 20px;
+    padding: 0 40px;
   }
 }

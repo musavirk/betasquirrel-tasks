@@ -57,14 +57,22 @@
         </div>
         <div class="form-3">
           <div class="first subject">
+            <label for="subject">Subject:<span>*</span></label>
             <select name="subject" id="subject">
-              Select Subject:
-              <span>*</span>
+              <option value="select" disabled selected>Select</option>
+              <option value="Maths">Maths</option>
+              <option value="English">English</option>
+              <option value="Physics">Physics</option>
+              <option value="Malayalam">Malayalam</option>
             </select>
-            <option value="Maths">MAths</option>
-            <option value="English">English</option>
           </div>
-          <div class="second hostel"></div>
+          <div class="second hostel">
+            <p>Do You Need Hostel:</p>
+            <label for="hostel">Yes</label>
+            <input type="radio" value="yes" id="hostel" name="hostel" />
+            <label for="hostel">No</label>
+            <input type="radio" value="no" id="hostel" name="hostel" />
+          </div>
         </div>
         <div class="checkbx"></div>
         <div class="address"></div>
