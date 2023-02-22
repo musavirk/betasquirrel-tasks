@@ -9,16 +9,19 @@ h1 {
   background-color: #ffffff;
   height: 80px;
   border-bottom: 1px solid #535353;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 #logobx {
   display: flex;
-  align-self: center;
+  align-items: center;
   float: left;
-  justify-content: center;
 }
 #profilebx {
   float: right;
   width: auto;
+  align-items: center;
+  padding: 5px;
 }
 #logobx img {
   height: 50px;
@@ -49,16 +52,23 @@ a {
 .main {
   padding: 0 30px 0 30px;
 }
-h3 {
+h4 {
   text-decoration: underline;
   padding: 3px;
   color: #535353;
 }
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head a {
+  background-color: #3bb989;
+  padding: 5px;
+  color: #f3fffb;
+}
 table {
   width: calc(100vw - 201px);
-}
-tr {
-  height: 40px;
 }
 table,
 th,
@@ -66,4 +76,8 @@ td {
   border: 1px solid #535353;
   border-collapse: collapse;
   color: #535353;
+}
+th,
+td {
+  padding: 20px;
 }

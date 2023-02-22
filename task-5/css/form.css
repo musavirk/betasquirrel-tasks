@@ -46,14 +46,26 @@ a {
   color: #535353;
   text-decoration: none;
 }
-.main {
-  padding: 0 30px 0 30px;
-}
 h3 {
   text-decoration: underline;
-  padding: 3px;
-  color: #535353;
 }
-table {
+.main {
+  padding: 0 30px 0 30px;
+  display: block;
+}
+.namebox,
+.mailbox {
+  height: 50px;
   width: calc(100vw - 201px);
+  display: flex;
+}
+.first {
+  display: flex;
+  float: left;
+  padding: 15px;
+}
+.second {
+  display: flex;
+  float: right;
+  padding: 15px;
 }
