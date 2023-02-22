@@ -26,56 +26,52 @@
         </nav>
       </div>
       <div class="main">
-        <h3>STUDENTS</h3>
-        <div class="namebox">
+        <div class="head"><h3>STUDENT REGISTRATION</h3></div>
+        <div class="form-1">
           <div class="first">
-            <label for="first name">
-              First Name :<span class="red-text">*</span></label
-            >
-            <input
-              type="text"
-              placeholder="Enter your first name"
-              id="first name"
-            />
+            <label for="fname">First Name:<span>*</span></label>
+            <input type="text" id="fname" placeholder="Enter your first name" />
           </div>
           <div class="second">
-            <label for="last name"
-              >Last Name:<span class="red-text">*</span></label
-            >
-            <input
-              type="text"
-              placeholder="Enter your last name"
-              id="last name"
-            />
+            <label for="lname">Last Name:<span>*</span></label>
+            <input type="text" id="lname" placeholder="Enter your lasst name" />
           </div>
         </div>
-        <div class="mailbox">
+        <div class="form-2">
           <div class="first">
-            <label for="mobile">
-              Mobile : <span class="red-text">*</span></label
-            >
+            <label for="mobile">Mobile:<span>*</span></label>
             <input
               type="tel"
-              placeholder="Enter your mobile number"
               id="mobile"
+              placeholder="Enter your mobile number"
             />
           </div>
           <div class="second">
-            <label>Email :</label>
-            <input type="text" placeholder="Enter your mail" />
+            <label for="email">Email:<span>*</span></label>
+            <input type="text" id="email" placeholder="Enter your email id" />
           </div>
         </div>
-        <div class="hostel">
+        <div class="form-3">
           <div class="first">
-            <select name="Branch" id="bracnch">
+            <label for="branch">Branch:<span>*</span></label>
+            <select name="branch" id="branch">
+              Branch:<span>*</span>
               <option value="select" disabled selected>Select</option>
-              <option value="ME">Mechanical</option>
               <option value="CSE">Computer science</option>
               <option value="EEE">Electrical</option>
-              <option value="Civil">Civil</option>
             </select>
           </div>
-          <div class="second"></div>
+          <div class="second">
+            <div>
+              <p>Do you need hostel facility</p>
+            </div>
+            <div>
+              <input type="radio" id="yes" name="hostel" value="yes" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="hostel" value="no" />
+              <label for="no">No</label>
+            </div>
+          </div>
         </div>
       </div>
     </div>

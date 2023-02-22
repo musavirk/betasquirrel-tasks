@@ -48,24 +48,30 @@ a {
 }
 h3 {
   text-decoration: underline;
+  padding-left: 20px;
+}
+span {
+  color: red;
 }
 .main {
-  padding: 0 30px 0 30px;
-  display: block;
-}
-.namebox,
-.mailbox {
-  height: 50px;
   width: calc(100vw - 201px);
-  display: flex;
+  padding-left: 20px;
 }
 .first {
   display: flex;
   float: left;
-  padding: 15px;
 }
 .second {
   display: flex;
   float: right;
-  padding: 15px;
+}
+.form-1,
+.form-2,
+.form-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+.form-3 .second {
+  display: block;
 }
