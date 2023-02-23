@@ -3,7 +3,9 @@
 ## Demo
 
 [Live](https://musavirk.github.io/betasquirrel-tasks/)
-
+## Profiles
+[Linkedin](https://www.linkedin.com/in/musavir-k-6a5a46219/)
+[Stack overflow](https://stackoverflow.com/users/21194139/musavir-k)
 ## Task
 
 | Requirments                           | Output                          |
@@ -69,10 +71,6 @@ Read the below links
 - [HTML Table Colgroup](https://www.w3schools.com/html/html_table_colgroup.asp)
 - [Form](https://www.w3schools.com/css/css_form.asp)
 
-## Linkedin
 
-[Linkedin](https://www.linkedin.com/in/musavir-k-6a5a46219/)
 
-## Stack overflow
 
-[Stack overflow](https://stackoverflow.com/users/21194139/musavir-k)
