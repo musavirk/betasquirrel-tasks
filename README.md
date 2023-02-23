@@ -70,7 +70,3 @@ Read the below links
 - [HTML Table Styling](https://www.w3schools.com/html/html_table_styling.asp)
 - [HTML Table Colgroup](https://www.w3schools.com/html/html_table_colgroup.asp)
 - [Form](https://www.w3schools.com/css/css_form.asp)
-
-
-
-
