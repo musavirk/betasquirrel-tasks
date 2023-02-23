@@ -57,8 +57,8 @@
         </div>
         <div class="form-3">
           <div class="first subject">
-            <label for="subject">Subject:<span>*</span></label>
-            <select name="subject" id="subject">
+            <label for="branch">Branch:<span>*</span></label>
+            <select name="branch" id="branch">
               <option value="select" disabled selected>Select</option>
               <option value="Maths">Maths</option>
               <option value="English">English</option>
@@ -68,13 +68,27 @@
           </div>
           <div class="second hostel">
             <p>Do You Need Hostel:</p>
-            <label for="hostel">Yes</label>
-            <input type="radio" value="yes" id="hostel" name="hostel" />
-            <label for="hostel">No</label>
-            <input type="radio" value="no" id="hostel" name="hostel" />
+            <div>
+              <input type="radio" id="hostelyes" name="hostel" value="Yes" />
+              <label for="hostelyes">Yes</label>
+              <input type="radio" id="hostelno" name="hostel" value="Yes" />
+              <label for="hostelno">No</label>
+            </div>
           </div>
         </div>
-        <div class="checkbx"></div>
+        <div class="checkbx">
+          <div><p>Choose additional subject</p></div>
+          <div>
+            <input type="checkbox" id="subject" name="subject" value="Maths" />
+            <label for="subject">Maths</label>
+            <input type="checkbox" id="subject" name="subject" value="Maths" />
+            <label for="subject">Physics</label>
+            <input type="checkbox" id="subject" name="subject" value="Maths" />
+            <label for="subject">Chemistry</label>
+            <input type="checkbox" id="subject" name="subject" value="Maths" />
+            <label for="subject">Biology</label>
+          </div>
+        </div>
         <div class="address"></div>
       </div>
     </div>

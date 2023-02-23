@@ -72,3 +72,10 @@ span {
   justify-content: space-between;
   padding: 20px 400px 20px 20px;
 }
+.hostel {
+  display: block;
+}
+.checkbx {
+  width: calc(100vw - 201px);
+  padding: 0 50px;
+}
