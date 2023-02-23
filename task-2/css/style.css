@@ -41,8 +41,8 @@ body {
 .main {
   background-color: rgb(229, 232, 235);
   height: 300px;
-  width: calc(100vw - 30px);
-  padding: 10px;
+  width: calc(100vw - 60px);
+  padding: 30px;
   margin: 15px 0 15px 0;
   align-self: center;
   overflow: hidden;
@@ -55,7 +55,6 @@ body {
   width: calc((100% - 200px) / 2);
   padding: 20px;
   margin-top: 20px;
-  margin-left: 20px;
   overflow: hidden;
 }
 .b2 {
@@ -65,7 +64,6 @@ body {
   width: calc((100% - 200px) / 2);
   padding: 20px;
   margin-top: 20px;
-  margin-right: 20px;
   overflow: hidden;
 }
 #b {
@@ -85,19 +83,20 @@ body {
   }
   .main {
     width: 100vw;
-    height: 500px;
+    height: auto;
     padding: 0;
   }
   .b1 {
     width: 100vw;
-    height: 150px;
+    height: auto;
     margin: 20px 0 20px 0;
-    padding: 40px;
+    padding: 0 20px;
   }
   .b2 {
     width: 100vw;
-    height: 150px;
+    height: auto;
     margin: 20px 0 20px 0;
-    padding: 0 40px;
+    padding: 0 20px;
+    float: none;
   }
 }
