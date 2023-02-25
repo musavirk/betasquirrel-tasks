@@ -4,92 +4,173 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task-6</title>
     <link rel="stylesheet" href="css/form.css" />
+    <title>FORM</title>
   </head>
   <body>
-    <div id="navbar">
-      <div id="logobx">
-        <img src="image/logo.png" alt="Logo" />
-        <h1>One school</h1>
+    <nav>
+      <div id="nav-left">
+        <img src="image/logo.png" alt="logo" />
+        <h2>One school</h2>
       </div>
-      <div id="profilebx">
-        <img src="image/profile.jpg" alt="profile" />
+      <div id="nav-right"><img src="image/profile.jpg" alt="profile" /></div>
+    </nav>
+    <div id="main-container">
+      <div id="side-container">
+        <ul>
+          <li><h4>STUDENTS</h4></li>
+          <li><h4>STAFF</h4></li>
+          <li><h4>EXAMS</h4></li>
+        </ul>
       </div>
-    </div>
-    <div class="container">
-      <div id="sidebar">
-        <nav>
-          <a href="#">STUDENTS</a>
-          <a href="#"> STAFF</a>
-          <a href="#">EXAMS</a>
-        </nav>
-      </div>
-      <div class="main">
-        <div class="head"><h3>STUDENT REGISTRATION</h3></div>
-        <div class="form-1">
-          <div class="first fname">
-            <form action="">
-              <label for="fname">First Name: <span>*</span></label>
-              <input type="text" placeholder="Enter your First name" />
-            </form>
-          </div>
-          <div class="second lname">
-            <form action="">
-              <label for="lname">Last Name: <span>*</span></label>
-              <input type="text" placeholder="Enter your Last name" />
-            </form>
-          </div>
-        </div>
-        <div class="form-2">
-          <div class="first mobile">
-            <form action="">
-              <label for="mobile">Mobile: <span>*</span></label>
-              <input type="tel" placeholder="Enter your number" />
-            </form>
-          </div>
-          <div class="second email">
-            <form action="">
-              <label for="email">Email: <span>*</span></label>
-              <input type="email" placeholder="Enter your email" />
-            </form>
-          </div>
-        </div>
-        <div class="form-3">
-          <div class="first subject">
-            <label for="branch">Branch:<span>*</span></label>
-            <select name="branch" id="branch">
-              <option value="select" disabled selected>Select</option>
-              <option value="Maths">Maths</option>
-              <option value="English">English</option>
-              <option value="Physics">Physics</option>
-              <option value="Malayalam">Malayalam</option>
-            </select>
-          </div>
-          <div class="second hostel">
-            <p>Do You Need Hostel:</p>
-            <div>
-              <input type="radio" id="hostelyes" name="hostel" value="Yes" />
-              <label for="hostelyes">Yes</label>
-              <input type="radio" id="hostelno" name="hostel" value="Yes" />
-              <label for="hostelno">No</label>
+      <div id="sub-main">
+        <div id="main">
+          <div id="form-h"><h4>STUDENTS REGISTRATION</h4></div>
+          <form action="#">
+            <div class="form-sec-1">
+              <div class="form-sec-1-left">
+                <div class="sec-1-name">
+                  <label for="name">First Name<span>*</span>:</label>
+                </div>
+                <div class="input-div">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your first name"
+                  />
+                </div>
+              </div>
+              <div class="form-sec-1-right">
+                <div class="sec-1-last">
+                  <label for="lastname">Last Name<span>*</span>:</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    id="lastname"
+                    placeholder="Enter your last name"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="form-sec-2">
+              <div class="form-sec-2-left">
+                <div class="sec-2-mobile">
+                  <label for="mobile">Mobile<span>*</span>:</label>
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="Enter your mobile number"
+                  />
+                </div>
+              </div>
+              <div class="form-sec-2-right">
+                <div class="sec-2-email">
+                  <label for="email">Email<span>*</span>:</label>
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-sec-3">
+              <div class="form-sec-3-left">
+                <div class="sec-3-branch">
+                  <label for="Branch">Branch<span>*</span>:</label>
+                </div>
+                <div>
+                  <select name="Branch" id="Branch">
+                    <option value="Select" disabled selected>Select</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Civil">Civil</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Computer science">Computer science</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-sec-3-right">
+                <div>
+                  <p>Do you need hostel facility :</p>
+                </div>
+                <div>
+                  <input type="radio" id="yes" name="hostel" value="yes" />
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="no" name="hostel" value="no" />
+                  <label for="no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="check-box">
+              <div><p>Choose additional subjects:</p></div>
+              <div class="check">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="cyber"
+                    name="cyber"
+                    value="cyber"
+                  />
+                  <label for="Cyber">Cyber security</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="Artificial Intelligence"
+                    name="Artificial Intelligence"
+                    value="Artificial Intelligence"
+                  />
+                  <label for="Artificial Intelligence">
+                    Artificial Intelligence</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="Block chain"
+                    name="Block chain"
+                    value="Block chain"
+                  />
+                  <label for="Block chain"> Block chain</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="IOT" name="IOT" value="IOT" />
+                  <label for="IOT">IOT</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="Robotics"
+                    name="Robotics"
+                    value="Robotics"
+                  />
+                  <label for="Robotics"> Robotics</label>
+                </div>
+              </div>
+            </div>
+            <div class="address">
+              <div><p>Permenent address<span>*</span>:</p></div>
+              <div>
+                <textarea
+                  name="address"
+                  id="address"
+                  cols="50"
+                  rows="10"
+                  placeholder="Enter your full address here"
+                ></textarea>
+              </div>
+            </div>
+            <div class="btn">
+              <input type="reset" value="Reset" />
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
         </div>
-        <div class="checkbx">
-          <div><p>Choose additional subject</p></div>
-          <div>
-            <input type="checkbox" id="subject" name="subject" value="Maths" />
-            <label for="subject">Maths</label>
-            <input type="checkbox" id="subject" name="subject" value="Maths" />
-            <label for="subject">Physics</label>
-            <input type="checkbox" id="subject" name="subject" value="Maths" />
-            <label for="subject">Chemistry</label>
-            <input type="checkbox" id="subject" name="subject" value="Maths" />
-            <label for="subject">Biology</label>
-          </div>
-        </div>
-        <div class="address"></div>
       </div>
     </div>
   </body>
