@@ -4,6 +4,7 @@
 
 [Live](https://musavirk.github.io/betasquirrel-tasks/)
 ## Profiles
+
 [Linkedin](https://www.linkedin.com/in/musavir-k-6a5a46219/)
 [Stack overflow](https://stackoverflow.com/users/21194139/musavir-k)
 ## Task

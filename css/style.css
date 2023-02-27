@@ -1,11 +1,11 @@
 body {
-  background-color: #a37ef9;
+  background-color: #6c35ea;
 }
 .main {
-  background-color: #de5fd6;
+  background-color: #5fde8e;
   height: 300px;
   width: 50%;
-  border-radius: 3px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@ body {
   margin-top: 200px;
 }
 a {
-  color: #c7eef5;
+  color: #0e1010;
   padding: 25px;
   border: 3px solid rgb(239, 239, 243);
   text-decoration: none;
