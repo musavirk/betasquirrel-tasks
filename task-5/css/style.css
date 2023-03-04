@@ -81,3 +81,11 @@ th,
 td {
   padding: 20px;
 }
+@media screen and (max-width: 767px) {
+  #sidebar {
+    display: none;
+  }
+  table {
+    width: 100vw;
+  }
+}
