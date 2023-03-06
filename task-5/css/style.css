@@ -89,3 +89,7 @@ td {
     width: 100vw;
   }
 }
+.flex {
+  display: flex;
+  align-items: center;
+}
