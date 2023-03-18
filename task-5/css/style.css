@@ -52,11 +52,7 @@ a {
 .main {
   padding: 0 30px 0 30px;
 }
-h4 {
-  text-decoration: underline;
-  padding: 3px;
-  color: #535353;
-}
+
 .head {
   display: flex;
   align-items: center;

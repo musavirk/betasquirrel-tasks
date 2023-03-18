@@ -35,25 +35,26 @@ h2 {
   border-top: 2px solid rgb(163, 163, 163);
   display: flex;
 }
-ul {
+/* ul {
   list-style-type: none;
   padding-left: 8px;
+} */
+#sidebar {
+  display: block;
+  background-color: #ffffff;
+  height: calc(100vh - 81px);
+  width: 200px;
+  float: left;
+  border-right: 1px solid #535353;
+  overflow: hidden;
 }
-#side-container {
-  width: 170px;
-  height: 100vh;
-  border-right: 2px solid rgb(163, 163, 163);
-  padding: 10px;
+a {
   display: flex;
+  flex-direction: row;
+  padding: 15px;
+  color: #535353;
+  text-decoration: none;
 }
-li {
-  padding: 10px 0;
-}
-h4 {
-  font-weight: 100;
-  text-decoration: underline;
-}
-/* sidebar over */
 #sub-main {
   width: calc(100% - 200px);
 }
