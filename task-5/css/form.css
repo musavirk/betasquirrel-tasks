@@ -9,7 +9,6 @@ nav {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  /* border-bottom: 2px solid rgb(163, 163, 163); */
 }
 #nav-left,
 #nav-right {
@@ -28,19 +27,13 @@ nav {
 h2 {
   padding-left: 5px;
 }
-/* navbar over */
 #main-container {
   height: 100%;
   width: 100%;
   border-top: 2px solid rgb(163, 163, 163);
   display: flex;
 }
-/* ul {
-  list-style-type: none;
-  padding-left: 8px;
-} */
-#sidebar {
-  display: block;
+.sidebar {
   background-color: #ffffff;
   height: calc(100vh - 81px);
   width: 200px;
@@ -49,12 +42,15 @@ h2 {
   overflow: hidden;
 }
 a {
-  display: flex;
-  flex-direction: row;
+  display: block;
   padding: 15px;
   color: #535353;
   text-decoration: none;
 }
+.flex {
+  display: flex;
+  align-items: center;
+} //
 #sub-main {
   width: calc(100% - 200px);
 }
@@ -140,7 +136,6 @@ input[type="submit"] {
   display: flex;
   justify-content: space-between;
 }
-/* done */
 @media screen and (max-width: 1500px) {
   .btn {
     margin-left: 60%;
