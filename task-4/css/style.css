@@ -81,6 +81,11 @@ h1 {
   width: 200px;
   float: left;
 }
+nav i {
+  padding: 5px;
+  margin-right: 5px;
+  color: darkblue;
+}
 #container {
   background-color: white;
   float: left;
