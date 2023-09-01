@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
+            alt="Logo"
+            width="30"
+            height="24"
+          />Oneschool</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#profileCollapse"
+          aria-controls="profileCollapse"
+          aria-expanded="false"
+          aria-label="profileCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="profileCollapse"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="userDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Musavir</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                <li><a href="#" class="dropdown-item">Profile</a></li>
+                <li><hr class="dropdown-devider" /></li>
+                <li><a href="#" class="dropdown-item">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- sidebar -->
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="bi bi-house-door"></i>
+                <span class="d-none d-md-inline">Dashbord</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="staff.html" class="nav-link">
+                <i class="bi bi-person"></i>
+                <span class="d-none d-md-inline">Staff</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="students.html" class="nav-link">
+                <i class="bi bi-people"></i>
+                <span class="d-none d-md-inline">Students</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link">
+                <i class="bi bi-cash"></i>
+                <span class="d-none d-md-inline">Account</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="inventory.html" class="nav-link active">
+                <i class="bi bi-box"></i>
+                <span class="d-none d-md-inline">Inventory</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="library.html" class="nav-link">
+                <i class="bi bi-book"></i>
+                <span class="d-none d-md-inline">Library</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid main-content">
+        <div class="row">
+          <div class="col">
+            <h1 class="mb-3">Library Inventory</h1>
+            <hr />
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Item ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Category</th>
+                    <th>Publication Year</th>
+                    <th>Available Copies</th>
+                    <th>Total Copies</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>To Kill a Mockingbird</td>
+                    <td>Harper Lee</td>
+                    <td>978-0-06-112008-4</td>
+                    <td>Fiction</td>
+                    <td>1960</td>
+                    <td>3</td>
+                    <td>5</td>
+                  </tr>
+
+                  <tr>
+                    <td>002</td>
+                    <td>1984</td>
+                    <td>George Orwell</td>
+                    <td>978-0-452-28423-4</td>
+                    <td>Fiction</td>
+                    <td>1949</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>978-0-7432-7356-5</td>
+                    <td>Fiction</td>
+                    <td>1925</td>
+                    <td>4</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>004</td>
+                    <td>The Catcher in the Rye</td>
+                    <td>J.D. Salinger</td>
+                    <td>978-0-316-76948-4</td>
+                    <td>Fiction</td>
+                    <td>1951</td>
+                    <td>1</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>005</td>
+                    <td>Pride and Prejudice</td>
+                    <td>Jane Austen</td>
+                    <td>978-0-14-143951-8</td>
+                    <td>Fiction</td>
+                    <td>1813</td>
+                    <td>5</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>006</td>
+                    <td>The Hobbit</td>
+                    <td>J.R.R. Tolkien</td>
+                    <td>978-0-618-00221-4</td>
+                    <td>Fantasy</td>
+                    <td>1937</td>
+                    <td>2</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>007</td>
+                    <td>The Lord of the Rings</td>
+                    <td>J.R.R. Tolkien</td>
+                    <td>978-0-395-19395-7</td>
+                    <td>Fantasy</td>
+                    <td>1954-1955</td>
+                    <td>3</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>008</td>
+                    <td>The Da Vinci Code</td>
+                    <td>Dan Brown</td>
+                    <td>978-0-307-27479-3</td>
+                    <td>Mystery</td>
+                    <td>2003</td>
+                    <td>5</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>009</td>
+                    <td>Harry Potter and the Sorcerer's Stone</td>
+                    <td>J.K. Rowling</td>
+                    <td>978-0-590-35340-3</td>
+                    <td>Fantasy</td>
+                    <td>1997</td>
+                    <td>6</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>010</td>
+                    <td>A Brief History of Time</td>
+                    <td>Stephen Hawking</td>
+                    <td>978-0-553-10953-5</td>
+                    <td>Science</td>
+                    <td>1988</td>
+                    <td>2</td>
+                    <td>2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

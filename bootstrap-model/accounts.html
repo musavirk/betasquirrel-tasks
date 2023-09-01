@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
+            alt="Logo"
+            width="30"
+            height="24"
+          />Oneschool</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#profileCollapse"
+          aria-controls="profileCollapse"
+          aria-expanded="false"
+          aria-label="profileCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="profileCollapse"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="userDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Musavir</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                <li><a href="#" class="dropdown-item">Profile</a></li>
+                <li><hr class="dropdown-devider" /></li>
+                <li><a href="#" class="dropdown-item">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- sidebar -->
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="bi bi-house-door"></i>
+                <span class="d-none d-md-inline">Dashbord</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="staff.html" class="nav-link">
+                <i class="bi bi-person"></i>
+                <span class="d-none d-md-inline">Staff</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="students.html" class="nav-link">
+                <i class="bi bi-people"></i>
+                <span class="d-none d-md-inline">Students</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link active">
+                <i class="bi bi-cash"></i>
+                <span class="d-none d-md-inline">Account</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="inventory.html" class="nav-link">
+                <i class="bi bi-box"></i>
+                <span class="d-none d-md-inline">Inventory</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="library.html" class="nav-link">
+                <i class="bi bi-book"></i>
+                <span class="d-none d-md-inline">Library</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- main -->
+      <div class="container-fluid main-content">
+        <div class="row">
+          <div class="col">
+            <h2 class="mb-3">Accounts</h2>
+            <hr />
+            <div class="table-responsive">
+              <table class="table table-bordered mt-3">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th colspan="2">Debit</th>
+                    <th colspan="2">Credit</th>
+                  </tr>
+                  <tr>
+                    <th>Date</th>
+                    <th>Transaction Id</th>
+                    <th>Amount</th>
+                    <th>Transaction Id</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01/01/2023</td>
+                    <td>TS 12AB3</td>
+                    <td>$500</td>
+                    <td>TS 23VD5</td>
+                    <td>$750</td>
+                  </tr>
+                  <tr>
+                    <td>02/01/2023</td>
+                    <td>TS 23DF9</td>
+                    <td>$450</td>
+                    <td>TS 61GH5</td>
+                    <td>$600</td>
+                  </tr>
+                  <tr>
+                    <td>03/01/2023</td>
+                    <td>TS 66HD5</td>
+                    <td>$650</td>
+                    <td>TS 44HG9</td>
+                    <td>$600</td>
+                  </tr>
+                  <tr>
+                    <td>04/01/2023</td>
+                    <td>TS 66HD5</td>
+                    <td>$65000</td>
+                    <td>TS 44HG9</td>
+                    <td>$60000</td>
+                  </tr>
+                  <tr>
+                    <td>05/01/2023</td>
+                    <td>TS 66HD5</td>
+                    <td>$650</td>
+                    <td>TS 44HG9</td>
+                    <td>$670</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
