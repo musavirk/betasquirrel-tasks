@@ -1,13 +1,154 @@
 body {
+  margin: 0px;
+  padding: 0%;
+}
+.navbar {
+  height: 80px;
+  border-bottom: 2px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-container,
+.profile-container {
+  width: auto;
+}
+.logo-container h3 {
+  display: inline-block;
+  color: #555;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container img {
+  padding: 0 15px 0 15px;
+}
+.profile-container {
+  padding-right: 15px;
+}
+.profile-container img {
+  border-radius: 50%;
+  width: 60px;
+}
+.navbar img {
+  height: 60px;
+}
+.container {
+  width: 100vw;
+  height: calc(100vh - 8px);
+  overflow: hidden;
+  margin: 0px !important;
+}
+.sidebar {
+  width: 150px;
+  border-right: 2px solid #555;
+  height: 100%;
+  padding: 15px;
+}
+.sidebar > nav {
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  padding-bottom: 15px;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.sidebar nav span {
+  padding-left: 10px;
+}
+.content,
+.sidebar {
+  float: left;
+}
+.content {
+  height: 100%;
+  width: calc(100% - 152px);
+  padding: 15px;
+  /* overflow-y: auto; */
+  margin: 0px;
+  float: right;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading h2 {
+  display: inline-block;
+  color: #555;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+}
+.link-btn {
+  background-color: #3cb989;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.table-container {
+  overflow: auto;
+}
+table {
+  width: 100%;
+  margin-top: 15px;
+}
+table.list-table,
+.list-table th,
+.list-table td {
+  border: 2px solid #555;
+  border-collapse: collapse;
+}
+table.colored-table {
+  border-collapse: collapse;
+}
+.colored-table tr {
+  border-bottom: 2px solid #555 !important;
+}
+th {
+  text-transform: uppercase;
+  text-align: left;
+}
+th:first-child,
+td:first-child {
+  text-align: center;
+  width: 50px;
+}
+td,
+th {
+  padding: 15px;
+}
+caption {
+  padding-bottom: 15px;
+  font-size: 24px;
+  text-decoration: underline;
+}
+.list-table th:first-child,
+.list-table td:first-child {
+  width: auto;
+}
+.colored-table tr:nth-child(odd) {
+  background-color: greenyellow;
+}
+.list-table tr:hover {
+  background-color: #372e8a;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+nav img,
+nav i {
+  height: 25px;
+  margin-right: 15px;
+}
+nav i {
+  vertical-align: middle;
+  line-height: 27px !important;
+  color: #1abcfe;
 }
