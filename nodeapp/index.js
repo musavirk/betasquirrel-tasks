@@ -60,6 +60,7 @@ const server = http.createServer((req, res) => {
 
     routeHandler(requestObject, (statusCode, responseObject) => {
       statusCode = typeof statusCode === 'number' ? statusCode : 200;
+      res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Content-Type', 'application/json');
       res.writeHead(statusCode);
       responseObject =

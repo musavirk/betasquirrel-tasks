@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Main from "../layouts/Main";
 import { Table, Row, Col, Button, Container, Modal } from "react-bootstrap";
 import StudentForm from "./Studentform";
@@ -6,29 +6,33 @@ import StudentForm from "./Studentform";
 const Student = () => {
   const [students, setStudents] = useState([]);
 
-  setTimeout(() => {
-    setStudents([
-      {
-        firstname: "Ragu",
-        lastname: "B",
-        email: "ragu@gmail.com",
-        contact: "12345678",
-      },
-      {
-        firstname: "Varman",
-        lastname: "K",
-        email: "varman@gmail.com",
-        contact: "12344679",
-      },
-      {
-        firstname: "Jhone",
-        lastname: "S",
-        email: "jhonr@gmail.com",
-        contact: "1245367",
-      },
-    ]);
-  }, 5000);
-  console.log(students);
+  // setTimeout(() => {
+  //   setStudents([
+  //     {
+  //       firstname: "Ragu",
+  //       lastname: "B",
+  //       email: "ragu@gmail.com",
+  //       contact: "12345678",
+  //     },
+  //     {
+  //       firstname: "Varman",
+  //       lastname: "K",
+  //       email: "varman@gmail.com",
+  //       contact: "12344679",
+  //     },
+  //     {
+  //       firstname: "Jhone",
+  //       lastname: "S",
+  //       email: "jhonr@gmail.com",
+  //       contact: "1245367",
+  //     },
+  //   ]);
+  // }, 5000);
+  useEffect(() => {
+    fetch("http://127.0.0.1:4000/student")
+      .then((res) => res.json())
+      .then((data) => setStudents(data.data));
+  }, []);
 
   const [show, setShow] = useState(false);
 
