@@ -11,7 +11,7 @@ const AccountsForm = () => {
         <Col>
           <Form.Group controlId="amount">
             <Form.Label> Amount</Form.Label>
-            <Form.Input
+            <Form.Control
               type="text"
               value={accountsForm.amount}
               onChange={(e) => {
