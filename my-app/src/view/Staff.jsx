@@ -16,13 +16,7 @@ const Staff = () => {
       .then((data) => setStaffs(data.data))
       .catch((err) => console.log(err));
   }, []);
-  // setTimeout(() => {
-  //   setStaffs([
-  //     { name: "Sen", email: "sen@gmail.com", contact: "974756777" },
-  //     { name: "Ram", email: "ram@gmail.com", contact: "978563773" },
-  //     { name: "Jhone", email: "jhone@gmail.com", contact: "9876355353" },
-  //   ]);
-  // }, 5000);
+
   return (
     <>
       <Modal show={show} onHide={handleClose}>
@@ -92,3 +86,11 @@ const Staff = () => {
 };
 
 export default Staff;
+
+// setTimeout(() => {
+//   setStaffs([
+//     { name: "Sen", email: "sen@gmail.com", contact: "974756777" },
+//     { name: "Ram", email: "ram@gmail.com", contact: "978563773" },
+//     { name: "Jhone", email: "jhone@gmail.com", contact: "9876355353" },
+//   ]);
+// }, 5000);

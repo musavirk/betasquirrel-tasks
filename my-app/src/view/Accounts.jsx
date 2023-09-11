@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Main from "../layouts/Main";
 import { Table, Row, Col, Modal, Button, Container } from "react-bootstrap";
 import AccountsForm from "./AccountsForm";
+import * as Icon from "react-bootstrap-icons";
 const Accounts = () => {
   const [accounts, setAccounts] = useState([]);
   setTimeout(() => {
@@ -24,11 +25,11 @@ const Accounts = () => {
           <AccountsForm />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="reset" onClick={handleClose}>
             Close
           </Button>
           <Button variant="success" type="submit" onClick={handleClose}>
-            Save Changes
+            Save
           </Button>
         </Modal.Footer>
       </Modal>
@@ -39,10 +40,10 @@ const Accounts = () => {
               <Col>
                 <h2>Accounts</h2>
               </Col>
-
               <Col className="flex justify-content-end">
-                <Button variant="primary" onClick={handleShow}>
-                  ADD
+                <Button variant="success" onClick={handleShow}>
+                  <Icon.Plus className="mx-2" />
+                  Update Accounts
                 </Button>
               </Col>
             </Row>

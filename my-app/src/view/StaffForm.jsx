@@ -27,6 +27,7 @@ const StaffForm = () => {
               <Form.Control
                 type="text"
                 placeholder="Enter your First Name"
+                name="firstName"
                 value={staffForm.firstName}
                 onChange={(e) => {
                   setStaffForm(e.target.value);
@@ -40,6 +41,7 @@ const StaffForm = () => {
               <Form.Control
                 type="text"
                 placeholder="Enter your Last Name"
+                name="lastName"
                 value={staffForm.lastName}
                 onChange={(e) => {
                   setStaffForm(e.target.value);
@@ -55,6 +57,7 @@ const StaffForm = () => {
               <Form.Control
                 type="email"
                 placeholder="Enter your Email"
+                name="email"
                 value={staffForm.email}
                 onChange={(e) => {
                   setStaffForm(e.target.value);
@@ -67,6 +70,7 @@ const StaffForm = () => {
               <Form.Label>Phone</Form.Label>
               <Form.Control
                 type="tel"
+                name="phone"
                 placeholder="Enter your Phone Number"
                 value={staffForm.phone}
                 onChange={(e) => {
@@ -84,6 +88,7 @@ const StaffForm = () => {
                 type="text-area"
                 placeholder="Enter Your Address"
                 as="textarea"
+                name="address"
                 rows={3}
                 value={staffForm.address}
                 onChange={(e) => {
@@ -97,7 +102,7 @@ const StaffForm = () => {
           <Col>
             <Form.Group controlId="qualification">
               <Form.Label>Qualification</Form.Label>
-              <Form.Select>
+              <Form.Select value={setStaffForm.education}>
                 <option>Select from bellow</option>
                 {educations.map((education) => (
                   <option value={education.value}>{education.name}</option>
@@ -143,7 +148,6 @@ const StaffForm = () => {
                   value={additionalDuty.name}
                 />
               ))}
-             
             </Form.Group>
           </Col>
         </Row>
@@ -153,18 +157,8 @@ const StaffForm = () => {
 };
 export default StaffForm;
 
-
-
-
-
-
-
-
-
-
-
-
- {/* <Form.Check
+{
+  /* <Form.Check
                 inline
                 type="checkbox"
                 label="Cultural Fest"
@@ -195,4 +189,5 @@ export default StaffForm;
                 name="radioGroup"
                 id="sports"
                 value="sports"
-              /> */}
+              /> */
+}
