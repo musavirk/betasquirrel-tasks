@@ -1,8 +1,23 @@
 const getStudent = (input, callback) => {
   const student = [
-    { name: 'Midlaj', email: 'midlaj@gmail.com' },
-    { name: 'Musavir', email: 'musavir@gmail.com' },
-    { name: 'Ram', email: 'ram@gmail.com' },
+    {
+      firstName: 'Midlaj',
+      lastName: 'K',
+      email: 'midlaj@gmail.com',
+      phone: '974784836',
+    },
+    {
+      firstName: 'Musavir',
+      lastName: 'K',
+      email: 'musavir@gmail.com',
+      phone: '859093255',
+    },
+    {
+      firstName: 'Ram',
+      lastName: 'Raj',
+      email: 'ram@gmail.com',
+      phone: '97631166',
+    },
   ];
 
   callback(200, { message: '', data: student });

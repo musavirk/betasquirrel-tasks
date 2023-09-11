@@ -7,6 +7,7 @@ function Main({ children }) {
       <AppNavbar />
       <div className="d-flex">
         <Sidebar />
+
         <div className="container-fluid">{children}</div>
       </div>
     </>

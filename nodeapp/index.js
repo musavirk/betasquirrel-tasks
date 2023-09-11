@@ -1,3 +1,4 @@
+'use strict';
 const http = require('http');
 const url = require('url');
 const StringDecoder = require('string_decoder').StringDecoder;
@@ -60,6 +61,7 @@ const server = http.createServer((req, res) => {
 
     routeHandler(requestObject, (statusCode, responseObject) => {
       statusCode = typeof statusCode === 'number' ? statusCode : 200;
+      // CROS enabling
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Content-Type', 'application/json');
       res.writeHead(statusCode);
