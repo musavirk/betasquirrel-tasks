@@ -11,7 +11,7 @@ const StudentForm = () => {
     mobile: null,
     course: null,
     isHostelOpted: true,
-    additionalCourse: null,
+    skills: [],
   });
   // set loop for select course
   const [courses] = useState([
@@ -25,13 +25,26 @@ const StudentForm = () => {
   const handleChange = (e) => {
     setStudentForm({ ...studentForm, [e.target.name]: e.target.value });
   };
-
+  //  Handle changes for Radio input
   const handleRadio = (e) => {
-    console.log(Boolean(Number(e.target.value)));
     setStudentForm({
       ...studentForm,
       [e.target.name]: Boolean(Number(e.target.value)),
     });
+  };
+  // Handle changes for checkbox input
+  const handleCheckbox = (value) => {
+    if (studentForm.skills.includes(value)) {
+      setStudentForm({
+        ...studentForm,
+        skills: studentForm.skills.filter((skill) => skill !== value),
+      });
+    } else {
+      setStudentForm({
+        ...studentForm,
+        skills: [...studentForm.skills, value],
+      });
+    }
   };
   //Return function
   return (
@@ -159,11 +172,46 @@ const StudentForm = () => {
         <Row>
           {/* Select additional course */}
           <Col>
-            <Form.Group className="mt-4" controlId="additionalCourse">
-              <Form.Label className="ml-5">
-                SELECT ADDITIONAL COURSES:
-              </Form.Label>
-              <Form.Check type="checkbox" label="AI" value={"hi"} />
+            <Form.Group controlId="skills" className="mt-2">
+              <Form.Label>Skills</Form.Label>
+              <Form.Check
+                inline
+                type="checkbox"
+                label="HTML 5"
+                name="skills[]"
+                value="HTML 5"
+                onChange={handleCheckbox}
+                checked={studentForm.skills.find((skill) => skill === "HTML 5")}
+              />
+              <Form.Check
+                inline
+                type="checkbox"
+                label="CSS 3"
+                name="skills[]"
+                value="CSS 3"
+                onChange={handleCheckbox}
+                checked={studentForm.skills.find((skill) => skill === "CSS 3")}
+              />
+              <Form.Check
+                inline
+                type="checkbox"
+                label="JavaScript"
+                name="skills[]"
+                value="JavaScript"
+                onChange={handleCheckbox}
+                checked={studentForm.skills.find(
+                  (skill) => skill === "JavaScript"
+                )}
+              />
+              <Form.Check
+                inline
+                type="checkbox"
+                label="PHP"
+                name="skills[]"
+                value="PHP"
+                onChange={handleCheckbox}
+                checked={studentForm.skills.find((skill) => skill === "PHP")}
+              />
             </Form.Group>
           </Col>
         </Row>
@@ -173,47 +221,3 @@ const StudentForm = () => {
 };
 
 export default StudentForm;
-
-// <Form.Check
-// inline
-// type="checkbox"
-// label="Artificial Intelligence"
-// name="radioGroup"
-// id="AI"
-// value="AI"
-// />
-// <Form.Check
-// inline
-// type="checkbox"
-// label="Mobile Computing"
-// name="radioGroup"
-// id="MC"
-// value="MC"
-// />
-// <Form.Check
-// inline
-// type="checkbox"
-// label="Data Mining"
-// name="radioGroup"
-// id="DM"
-// value="DM"
-// />
-// <Form.Check
-// inline
-// type="checkbox"
-// label="Networking"
-// name="radioGroup"
-// id="NW"
-// value="NW"
-// />
-
-//    <Row>
-//      <Col className="mx-3  my-3 text-end">
-//        <Button variant="danger" type="reset" className="mx-3">
-//               Reset
-//         </Button>
-//          <Button variant="success" type="submit">
-//               Submit
-//             </Button>
-//           </Col>
-//         </Row>

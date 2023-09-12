@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Main from "../layouts/Main";
-import { Table, Row, Col, Button, Container, Modal } from "react-bootstrap";
+import {
+  Table,
+  Row,
+  Col,
+  Button,
+  Container,
+  Modal,
+  Form,
+} from "react-bootstrap";
 import StudentForm from "./Studentform";
 import * as Icon from "react-bootstrap-icons";
 const Student = () => {
@@ -24,17 +32,19 @@ const Student = () => {
         <Modal.Header closeButton>
           <Modal.Title>ADD STUDENT</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <StudentForm />
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="success" type="submit" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+        <Form>
+          <Modal.Body>
+            <StudentForm />
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" type="reset" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="success" type="submit" onClick={handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Form>
       </Modal>
 
       <Main>
