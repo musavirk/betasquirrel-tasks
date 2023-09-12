@@ -2,7 +2,15 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 
 const StaffForm = () => {
-  const [staffForm, setStaffForm] = useState({ firstName: "", lastName: "" });
+  const [staffForm, setStaffForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    address: "",
+    qualification: "",
+    isHostelOpted: true,
+  });
   const [educations] = useState([
     { value: "SSLC", name: "SSLC" },
     { value: "Plus Two", name: "PLUS TWO" },
@@ -11,12 +19,17 @@ const StaffForm = () => {
     { value: "Post Graduation", name: "Post Graduation" },
     { value: "PHD", name: "PHD" },
   ]);
-  const [additionalDuties] = useState([
-    { name: "CUltural Fest" },
-    { name: "Sports" },
-    { name: "Physical EDucation" },
-    { name: "IEEE" },
-  ]);
+
+  const handleChanges = (e) => {
+    setStaffForm({ ...staffForm, [e.target.name]: e.target.value });
+  };
+
+  const handleRadio = (e) => {
+    setStaffForm({
+      ...staffForm,
+      [e.target.name]: Boolean(Number(e.target.value)),
+    });
+  };
   return (
     <Form>
       <Container fluid>
@@ -29,9 +42,7 @@ const StaffForm = () => {
                 placeholder="Enter your First Name"
                 name="firstName"
                 value={staffForm.firstName}
-                onChange={(e) => {
-                  setStaffForm(e.target.value);
-                }}
+                onChange={handleChanges}
               />
             </Form.Group>
           </Col>
@@ -43,9 +54,7 @@ const StaffForm = () => {
                 placeholder="Enter your Last Name"
                 name="lastName"
                 value={staffForm.lastName}
-                onChange={(e) => {
-                  setStaffForm(e.target.value);
-                }}
+                onChange={handleChanges}
               />
             </Form.Group>
           </Col>
@@ -59,9 +68,7 @@ const StaffForm = () => {
                 placeholder="Enter your Email"
                 name="email"
                 value={staffForm.email}
-                onChange={(e) => {
-                  setStaffForm(e.target.value);
-                }}
+                onChange={handleChanges}
               />
             </Form.Group>
           </Col>
@@ -73,9 +80,7 @@ const StaffForm = () => {
                 name="phone"
                 placeholder="Enter your Phone Number"
                 value={staffForm.phone}
-                onChange={(e) => {
-                  setStaffForm(e.target.value);
-                }}
+                onChange={handleChanges}
               />
             </Form.Group>
           </Col>
@@ -91,9 +96,7 @@ const StaffForm = () => {
                 name="address"
                 rows={3}
                 value={staffForm.address}
-                onChange={(e) => {
-                  setStaffForm(e.target.value);
-                }}
+                onChange={handleChanges}
               />
             </Form.Group>
           </Col>
@@ -102,7 +105,7 @@ const StaffForm = () => {
           <Col>
             <Form.Group controlId="qualification">
               <Form.Label>Qualification</Form.Label>
-              <Form.Select value={setStaffForm.education}>
+              <Form.Select value={setStaffForm.education} name="education">
                 <option>Select from bellow</option>
                 {educations.map((education) => (
                   <option value={education.value}>{education.name}</option>
@@ -119,22 +122,24 @@ const StaffForm = () => {
                 inline
                 type="radio"
                 label="YES"
-                name="radioGroup"
-                id="YES"
-                value="yes"
+                name="isHostelOpted"
+                value={1}
+                checked={staffForm.isHostelOpted}
+                onChange={handleRadio}
               />
               <Form.Check
                 inline
                 type="radio"
                 label="NO"
-                name="radioGroup"
-                id="NO"
-                value="no"
+                name="isHostelOpted"
+                value={0}
+                checked={!staffForm.isHostelOpted}
+                onChange={handleRadio}
               />
             </Form.Group>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col>
             <Form.Group controlId="additionalDuty">
               <Form.Label>Additional Charges:</Form.Label>
@@ -143,14 +148,14 @@ const StaffForm = () => {
                   inline
                   type="checkbox"
                   label={additionalDuty.name}
-                  name="radioGroup"
+                  name="additionalDuty"
                   id={additionalDuty.name}
                   value={additionalDuty.name}
                 />
               ))}
             </Form.Group>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Form>
   );

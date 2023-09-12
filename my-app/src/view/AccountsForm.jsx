@@ -10,7 +10,7 @@ const AccountsForm = () => {
   });
 
   const handleChange = (e) => {
-    setAccountsForm({ ...accountsForm, [e.target.value]: e.target.value });
+    setAccountsForm({ ...accountsForm, [e.target.name]: e.target.value });
   };
   return (
     <Container fluid>

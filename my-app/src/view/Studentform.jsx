@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import { Row, Col, Container, Form, Button } from "react-bootstrap";
+import { Row, Col, Container, Form } from "react-bootstrap";
 
 const StudentForm = () => {
   // Set value for form fields
   const [studentForm, setStudentForm] = useState({
-    firstName: "",
-    lastName: "",
-    address: "",
-    email: "",
-    mobile: "",
-    course: "",
+    firstName: null,
+    lastName: null,
+    address: null,
+    email: null,
+    mobile: null,
+    course: null,
+    isHostelOpted: true,
+    additionalCourse: null,
   });
   // set loop for select course
   const [courses] = useState([
@@ -18,58 +20,66 @@ const StudentForm = () => {
     { value: "ECE", name: "Electronics" },
     { value: "Civil", name: "Civil Engineering" },
   ]);
-  // set loop for check box
-  const [addCourses] = useState([
-    { name: "Artificial Intelligence" },
-    { name: "Mobile computing" },
-    { name: "Data Mining" },
-    { name: "Networking" },
-  ]);
+
+  // Handle changes
+  const handleChange = (e) => {
+    setStudentForm({ ...studentForm, [e.target.name]: e.target.value });
+  };
+
+  const handleRadio = (e) => {
+    console.log(Boolean(Number(e.target.value)));
+    setStudentForm({
+      ...studentForm,
+      [e.target.name]: Boolean(Number(e.target.value)),
+    });
+  };
+  //Return function
   return (
     <Form>
       <Container fluid>
         <Row>
+          {/* First name field */}
           <Col>
-            <Form.Group className="mb-3" controlId="fisrstname">
+            <Form.Group className="mb-3" controlId="firstName">
               <Form.Label>First Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter First Name"
+                name="firstName"
                 value={studentForm.firstName}
-                onChange={(e) => {
-                  setStudentForm(e.target.value);
-                }}
+                onChange={handleChange}
               />
             </Form.Group>
           </Col>
+          {/* Last name field */}
           <Col>
-            <Form.Group className="mb-3" controlId="lastname">
+            <Form.Group className="mb-3" controlId="lastName">
               <Form.Label>Last Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Last Name"
+                name="lastName"
                 value={studentForm.lastName}
-                onChange={(e) => {
-                  setStudentForm(e.target.value);
-                }}
+                onChange={handleChange}
               />
             </Form.Group>
           </Col>
         </Row>
         <Row>
+          {/* Email field */}
           <Col>
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Enter Your Email"
+                name="email"
                 value={studentForm.email}
-                onChange={(e) => {
-                  setStudentForm(e.target.value);
-                }}
+                onChange={handleChange}
               />
             </Form.Group>
           </Col>
+          {/* Mobile field */}
           <Col>
             <Form.Group className="mb-3" controlId="mobile">
               <Form.Label>Mobile</Form.Label>
@@ -77,14 +87,14 @@ const StudentForm = () => {
                 type="tel"
                 placeholder="Enter Mobile number"
                 value={studentForm.mobile}
-                onChange={(e) => {
-                  setStudentForm(e.target.value);
-                }}
+                name="mobile"
+                onChange={handleChange}
               />
             </Form.Group>
           </Col>
         </Row>
         <Row>
+          {/* Address field */}
           <Col>
             <Form.Group className="mb-3" controlId="address">
               <Form.Label>Address</Form.Label>
@@ -93,26 +103,33 @@ const StudentForm = () => {
                 placeholder="Enter Your Address"
                 as="textarea"
                 rows={3}
+                name="address"
                 value={studentForm.address}
-                onChange={(e) => {
-                  setStudentForm(e.target.value);
-                }}
+                onChange={handleChange}
               />
             </Form.Group>
           </Col>
         </Row>
         <Row>
+          {/* Select education from drop down */}
           <Col>
             <Form.Group controlId="education">
               <Form.Label>Course</Form.Label>
               <Form.Select custom>
                 <option>Select</option>
                 {courses.map((course) => (
-                  <option value={course.value}>{course.name}</option>
+                  <option
+                    value={course.value}
+                    name="course"
+                    onChange={handleChange}
+                  >
+                    {course.name}
+                  </option>
                 ))}
               </Form.Select>
             </Form.Group>
           </Col>
+          {/* Select if hostel facility is needed or not */}
           <Col>
             <Form.Group controlId="isHostelOpted" className="mt-2">
               <div>
@@ -122,37 +139,31 @@ const StudentForm = () => {
                 inline
                 type="radio"
                 label="YES"
-                name="radioGroup"
-                id="YES"
-                value="yes"
+                name="isHostelOpted"
+                value={1}
+                onChange={handleRadio}
+                checked={studentForm.isHostelOpted}
               />
               <Form.Check
                 inline
                 type="radio"
                 label="NO"
-                name="radioGroup"
-                id="NO"
-                value="no"
+                name="isHostelOpted"
+                value={0}
+                onChange={handleRadio}
+                checked={!studentForm.isHostelOpted}
               />
             </Form.Group>
           </Col>
         </Row>
         <Row>
+          {/* Select additional course */}
           <Col>
-            <Form.Group className="mt-4">
+            <Form.Group className="mt-4" controlId="additionalCourse">
               <Form.Label className="ml-5">
                 SELECT ADDITIONAL COURSES:
               </Form.Label>
-              {addCourses.map((addCourse) => (
-                <Form.Check
-                  inline
-                  type="checkbox"
-                  label={addCourse.name}
-                  name="radioGroup"
-                  id={addCourse.name}
-                  value={addCourse.name}
-                />
-              ))}
+              <Form.Check type="checkbox" label="AI" value={"hi"} />
             </Form.Group>
           </Col>
         </Row>
@@ -196,15 +207,13 @@ export default StudentForm;
 // value="NW"
 // />
 
-{
-  /* <Row>
-          <Col className="mx-3  my-3 text-end">
-            <Button variant="danger" type="reset" className="mx-3">
-              Reset
-            </Button>
-            <Button variant="success" type="submit">
-              Submit
-            </Button>
-          </Col>
-        </Row> */
-}
+//    <Row>
+//      <Col className="mx-3  my-3 text-end">
+//        <Button variant="danger" type="reset" className="mx-3">
+//               Reset
+//         </Button>
+//          <Button variant="success" type="submit">
+//               Submit
+//             </Button>
+//           </Col>
+//         </Row>
