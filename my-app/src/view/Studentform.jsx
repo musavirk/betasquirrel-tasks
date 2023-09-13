@@ -4,51 +4,66 @@ import { Row, Col, Container, Form, Modal, Button } from "react-bootstrap";
 const StudentForm = ({ onClose }) => {
   // Set value for form fields
   const [studentForm, setStudentForm] = useState({
-    firstName: null,
-    lastName: null,
-    address: null,
-    email: null,
-    mobile: null,
-    course: null,
+    firstName: "",
+    lastName: "",
+    address: "",
+    email: "",
+    mobile: "",
+    course: "",
     isHostelOpted: true,
     skills: [],
   });
+
   // set loop for select course
   const [courses] = useState([
-    { value: "CSE", name: "Computer Science" },
-    { value: "EEE", name: "Electrical" },
-    { value: "ECE", name: "Electronics" },
-    { value: "Civil", name: "Civil Engineering" },
+    { id: 0, value: "CSE", name: "Computer Science" },
+    { id: 1, value: "EEE", name: "Electrical" },
+    { id: 2, value: "ECE", name: "Electronics" },
+    { id: 3, value: "Civil", name: "Civil Engineering" },
   ]);
 
   // Handle changes
   const handleChange = (e) => {
-    setStudentForm({ ...studentForm, [e.target.name]: e.target.value });
+    setStudentForm((prevForm) => ({
+      ...prevForm,
+      [e.target.name]: e.target.value,
+    }));
   };
+
   //  Handle changes for Radio input
   const handleRadio = (e) => {
-    setStudentForm({
-      ...studentForm,
-      [e.target.name]: Boolean(Number(e.target.value)),
+    setStudentForm((prevForm) => {
+      return {
+        ...prevForm,
+        [e.target.name]: Boolean(Number(e.target.value)),
+      };
     });
   };
+
   // Handle changes for checkbox input
   const handleCheckbox = (value) => {
     if (studentForm.skills.includes(value)) {
-      setStudentForm({
-        ...studentForm,
-        skills: studentForm.skills.filter((skill) => skill !== value),
-      });
+      setStudentForm((prevForm) => ({
+        ...prevForm,
+        skills: prevForm.skills.filter((skill) => skill !== value),
+      }));
     } else {
-      setStudentForm({
-        ...studentForm,
-        skills: [...studentForm.skills, value],
-      });
+      setStudentForm((prevForm) => ({
+        ...prevForm,
+        skills: [...prevForm.skills, value],
+      }));
     }
   };
+
+  // Submit function
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    console.log(studentForm);
+  };
+
   //Return function
   return (
-    <Form>
+    <Form onSubmit={handleFormSubmit}>
       <Modal.Body>
         <Container fluid>
           <Row>
@@ -127,15 +142,16 @@ const StudentForm = ({ onClose }) => {
           <Row>
             {/* Select education from drop down */}
             <Col>
-              <Form.Group controlId="education">
+              <Form.Group controlId="course">
                 <Form.Label>Course</Form.Label>
                 <Form.Select custom name="course" onChange={handleChange}>
                   <option>Select</option>
                   {courses.map((course) => (
                     <option
-                      value={course.value}
+                      value={course.id}
                       name="course"
                       onChange={handleChange}
+                      key={course.id}
                     >
                       {course.name}
                     </option>
@@ -181,7 +197,9 @@ const StudentForm = ({ onClose }) => {
                   label="HTML 5"
                   name="skills[]"
                   value="HTML 5"
-                  onChange={handleCheckbox}
+                  onChange={(e) => {
+                    handleCheckbox(e.target.value);
+                  }}
                   checked={studentForm.skills.find(
                     (skill) => skill === "HTML 5"
                   )}
@@ -192,7 +210,9 @@ const StudentForm = ({ onClose }) => {
                   label="CSS 3"
                   name="skills[]"
                   value="CSS 3"
-                  onChange={handleCheckbox}
+                  onChange={(e) => {
+                    handleCheckbox(e.target.value);
+                  }}
                   checked={studentForm.skills.find(
                     (skill) => skill === "CSS 3"
                   )}
@@ -203,7 +223,9 @@ const StudentForm = ({ onClose }) => {
                   label="JavaScript"
                   name="skills[]"
                   value="JavaScript"
-                  onChange={handleCheckbox}
+                  onChange={(e) => {
+                    handleCheckbox(e.target.value);
+                  }}
                   checked={studentForm.skills.find(
                     (skill) => skill === "JavaScript"
                   )}
@@ -214,7 +236,9 @@ const StudentForm = ({ onClose }) => {
                   label="PHP"
                   name="skills[]"
                   value="PHP"
-                  onChange={handleCheckbox}
+                  onChange={(e) => {
+                    handleCheckbox(e.target.value);
+                  }}
                   checked={studentForm.skills.find((skill) => skill === "PHP")}
                 />
               </Form.Group>
