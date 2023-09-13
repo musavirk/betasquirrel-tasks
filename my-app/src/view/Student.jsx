@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Main from "../layouts/Main";
-import {
-  Table,
-  Row,
-  Col,
-  Button,
-  Container,
-  Modal,
-  Form,
-} from "react-bootstrap";
+import { Table, Row, Col, Button, Container, Modal } from "react-bootstrap";
 import StudentForm from "./Studentform";
 import * as Icon from "react-bootstrap-icons";
 const Student = () => {
@@ -32,21 +24,8 @@ const Student = () => {
         <Modal.Header closeButton>
           <Modal.Title>ADD STUDENT</Modal.Title>
         </Modal.Header>
-        <Form>
-          <Modal.Body>
-            <StudentForm />
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" type="reset" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="success" type="submit" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Form>
+        <StudentForm onClose={handleClose} />
       </Modal>
-
       <Main>
         <Row>
           <Container fluid>
@@ -100,26 +79,3 @@ const Student = () => {
 };
 
 export default Student;
-
-// setTimeout(() => {
-//   setStudents([
-//     {
-//       firstname: "Ragu",
-//       lastname: "B",
-//       email: "ragu@gmail.com",
-//       contact: "12345678",
-//     },
-//     {
-//       firstname: "Varman",
-//       lastname: "K",
-//       email: "varman@gmail.com",
-//       contact: "12344679",
-//     },
-//     {
-//       firstname: "Jhone",
-//       lastname: "S",
-//       email: "jhonr@gmail.com",
-//       contact: "1245367",
-//     },
-//   ]);
-// }, 5000);
