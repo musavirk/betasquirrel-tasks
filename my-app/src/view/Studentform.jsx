@@ -30,7 +30,7 @@ const StudentForm = ({ onClose }) => {
     }));
   };
 
-  //  Handle changes for Radio input
+  // Handle changes for Radio input
   const handleRadio = (e) => {
     setStudentForm((prevForm) => {
       return {
@@ -171,8 +171,8 @@ const StudentForm = ({ onClose }) => {
                   label="YES"
                   name="isHostelOpted"
                   value={1}
-                  onChange={handleRadio}
                   checked={studentForm.isHostelOpted}
+                  onChange={handleRadio}
                 />
                 <Form.Check
                   inline
@@ -180,8 +180,8 @@ const StudentForm = ({ onClose }) => {
                   label="NO"
                   name="isHostelOpted"
                   value={0}
-                  onChange={handleRadio}
                   checked={!studentForm.isHostelOpted}
+                  onChange={handleRadio}
                 />
               </Form.Group>
             </Col>
@@ -200,9 +200,7 @@ const StudentForm = ({ onClose }) => {
                   onChange={(e) => {
                     handleCheckbox(e.target.value);
                   }}
-                  checked={studentForm.skills.find(
-                    (skill) => skill === "HTML 5"
-                  )}
+                  checked={studentForm.skills.includes("HTML 5")}
                 />
                 <Form.Check
                   inline
@@ -213,9 +211,7 @@ const StudentForm = ({ onClose }) => {
                   onChange={(e) => {
                     handleCheckbox(e.target.value);
                   }}
-                  checked={studentForm.skills.find(
-                    (skill) => skill === "CSS 3"
-                  )}
+                  checked={studentForm.skills.includes("CSS 3")}
                 />
                 <Form.Check
                   inline
@@ -226,9 +222,7 @@ const StudentForm = ({ onClose }) => {
                   onChange={(e) => {
                     handleCheckbox(e.target.value);
                   }}
-                  checked={studentForm.skills.find(
-                    (skill) => skill === "JavaScript"
-                  )}
+                  checked={studentForm.skills.includes("JavaScript")}
                 />
                 <Form.Check
                   inline
@@ -239,7 +233,7 @@ const StudentForm = ({ onClose }) => {
                   onChange={(e) => {
                     handleCheckbox(e.target.value);
                   }}
-                  checked={studentForm.skills.find((skill) => skill === "PHP")}
+                  checked={studentForm.skills.includes("PHP")}
                 />
               </Form.Group>
             </Col>
