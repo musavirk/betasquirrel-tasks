@@ -1,8 +1,8 @@
 body {
-  background-color: #d6dbdf;
+  background: radial-gradient(circle, #335233, #6060c9);
 }
 .main {
-  background-color: hsl(0, 0%, 90%);
+  background-color: #49b9f5;
   height: 300px;
   width: 50%;
   border-radius: 10px;
@@ -11,6 +11,13 @@ body {
   justify-content: center;
   margin: auto;
   margin-top: 200px;
+  flex-direction: column;
+}
+.main_a {
+  margin-bottom: 10px;
+}
+.main_b {
+  margin-top: 50px;
 }
 a {
   color: #0e1010;
@@ -21,7 +28,7 @@ a {
 }
 a:hover {
   color: rgb(12, 4, 4);
-  background-color: #df622c;
+  background-color: #f0eae7;
 }
 a:active {
   color: rgb(1, 17, 12);
