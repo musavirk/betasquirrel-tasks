@@ -4,6 +4,7 @@ const url = require('url');
 const StringDecoder = require('string_decoder').StringDecoder;
 const getStudent = require('./student');
 const getStaff = require('./staff');
+const getAccounts = require('./account');
 
 const port = 4000;
 const hostname = '127.0.0.1';
@@ -12,6 +13,7 @@ const hostname = '127.0.0.1';
 const route = {
   student: getStudent,
   staff: getStaff,
+  account: getAccounts,
 };
 
 // NOt found function

@@ -80,6 +80,8 @@ const StudentForm = ({ onClose }) => {
                 />
               </Form.Group>
             </Col>
+          </Row>
+          <Row>
             {/* Last name field */}
             <Col>
               <Form.Group className="mb-3" controlId="lastName">
@@ -108,6 +110,9 @@ const StudentForm = ({ onClose }) => {
                 />
               </Form.Group>
             </Col>
+          </Row>
+          <Row>
+            {" "}
             {/* Mobile field */}
             <Col>
               <Form.Group className="mb-3" controlId="mobile">
@@ -190,7 +195,7 @@ const StudentForm = ({ onClose }) => {
             {/* Select additional course */}
             <Col>
               <Form.Group controlId="skills" className="mt-2">
-                <Form.Label>Skills</Form.Label>
+                <Form.Label>Skills: </Form.Label>
                 <Form.Check
                   inline
                   type="checkbox"

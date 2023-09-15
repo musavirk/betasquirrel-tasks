@@ -6,7 +6,8 @@ const AccountsForm = () => {
     amount: "",
     date: "",
     transactionId: "",
-    name: "",
+    firstName: "",
+    lastName: "",
   });
 
   const handleChange = (e) => {
@@ -14,6 +15,32 @@ const AccountsForm = () => {
   };
   return (
     <Container fluid>
+      <Row>
+        <Col>
+          <Form.Group>
+            <Form.Label> First Name</Form.Label>
+            <Form.Control
+              type="text"
+              name="name"
+              value={accountsForm.firstName}
+              onChange={handleChange}
+            />
+          </Form.Group>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Form.Group>
+            <Form.Label> Last Name</Form.Label>
+            <Form.Control
+              type="text"
+              name="name"
+              value={accountsForm.lastName}
+              onChange={handleChange}
+            />
+          </Form.Group>
+        </Col>
+      </Row>
       <Row>
         <Col>
           <Form.Group controlId="amount">
@@ -27,6 +54,8 @@ const AccountsForm = () => {
             />
           </Form.Group>
         </Col>
+      </Row>
+      <Row>
         <Col>
           <Form.Group controlId="date">
             <Form.Label> Date</Form.Label>
@@ -36,24 +65,6 @@ const AccountsForm = () => {
               value={accountsForm.date}
               onChange={handleChange}
             />
-          </Form.Group>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Form.Group>
-            <Form.Label>Name</Form.Label>
-            <Form.Control
-              type="text"
-              name="name"
-              value={accountsForm.name}
-              onChange={handleChange}
-            />
-          </Form.Group>
-        </Col>
-        <Col>
-          <Form.Group>
-            <Form.Label></Form.Label>
           </Form.Group>
         </Col>
       </Row>

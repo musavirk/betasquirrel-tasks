@@ -10,26 +10,36 @@ const StaffForm = () => {
     address: "",
     qualification: "",
     isHostelOpted: true,
+    skills: [],
   });
+
   const [educations] = useState([
-    { value: "SSLC", name: "SSLC" },
-    { value: "Plus Two", name: "PLUS TWO" },
-    { value: "Diploma", name: "DIPLOMA" },
-    { value: "Degree", name: "DEGREE" },
-    { value: "Post Graduation", name: "Post Graduation" },
-    { value: "PHD", name: "PHD" },
+    { id: 0, value: "SSLC" },
+    { id: 1, value: "PLUS TWO" },
+    { id: 2, value: "DEGREE" },
+    { id: 3, value: "DIPLOMA" },
+    { id: 4, value: "PG" },
+    { id: 5, value: "PHD" },
   ]);
 
+  // Function for handle changes
   const handleChanges = (e) => {
-    setStaffForm({ ...staffForm, [e.target.name]: e.target.value });
+    setStaffForm((prevForm) => ({
+      ...prevForm,
+      [e.target.name]: e.target.value,
+    }));
   };
 
+  // Function for handle radio input changes
   const handleRadio = (e) => {
-    setStaffForm({
-      ...staffForm,
+    setStaffForm((prevForm) => ({
+      ...prevForm,
       [e.target.name]: Boolean(Number(e.target.value)),
-    });
+    }));
   };
+
+  // Function for handle Checkbox input
+  const handleCheckbox = (e) => {};
   return (
     <Form>
       <Container fluid>
@@ -46,6 +56,8 @@ const StaffForm = () => {
               />
             </Form.Group>
           </Col>
+        </Row>
+        <Row>
           <Col>
             <Form.Group controlId="lastName">
               <Form.Label>Last Name</Form.Label>
@@ -72,6 +84,9 @@ const StaffForm = () => {
               />
             </Form.Group>
           </Col>
+        </Row>
+        <Row>
+          {" "}
           <Col>
             <Form.Group controlId="phone">
               <Form.Label>Phone</Form.Label>
@@ -106,9 +121,15 @@ const StaffForm = () => {
             <Form.Group controlId="qualification">
               <Form.Label>Qualification</Form.Label>
               <Form.Select value={setStaffForm.education} name="education">
-                <option>Select from bellow</option>
+                <option>Select</option>
                 {educations.map((education) => (
-                  <option value={education.value}>{education.name}</option>
+                  <option
+                    value={education.value}
+                    key={education.id}
+                    name={education.value}
+                  >
+                    {education.value}
+                  </option>
                 ))}
               </Form.Select>
             </Form.Group>
@@ -139,23 +160,57 @@ const StaffForm = () => {
             </Form.Group>
           </Col>
         </Row>
-        {/* <Row>
+        <Row>
           <Col>
-            <Form.Group controlId="additionalDuty">
-              <Form.Label>Additional Charges:</Form.Label>
-              {additionalDuties.map((additionalDuty) => (
-                <Form.Check
-                  inline
-                  type="checkbox"
-                  label={additionalDuty.name}
-                  name="additionalDuty"
-                  id={additionalDuty.name}
-                  value={additionalDuty.name}
-                />
-              ))}
+            <Form.Group controlId="skills" className="mt-2">
+              <Form.Label>Skills:&nbsp </Form.Label>
+              <Form.Check
+                inline
+                type="checkbox"
+                label="HTML 5"
+                name="skills[]"
+                value="HTML 5"
+                onChange={(e) => {
+                  handleCheckbox(e.target.value);
+                }}
+                checked={staffForm.skills.includes("HTML 5")}
+              />
+              <Form.Check
+                inline
+                type="checkbox"
+                label="CSS 3"
+                name="skills[]"
+                value="CSS 3"
+                // onChange={(e) => {
+                //   handleCheckbox(e.target.value);
+                // }}
+                // checked={studentForm.skills.includes("CSS 3")}
+              />
+              <Form.Check
+                inline
+                type="checkbox"
+                label="JavaScript"
+                name="skills[]"
+                value="JavaScript"
+                // onChange={(e) => {
+                //   handleCheckbox(e.target.value);
+                // }}
+                // checked={studentForm.skills.includes("JavaScript")}
+              />
+              <Form.Check
+                inline
+                type="checkbox"
+                label="PHP"
+                name="skills[]"
+                value="PHP"
+                // onChange={(e) => {
+                //   handleCheckbox(e.target.value);
+                // }}
+                // checked={studentForm.skills.includes("PHP")}
+              />
             </Form.Group>
           </Col>
-        </Row> */}
+        </Row>
       </Container>
     </Form>
   );
