@@ -2,7 +2,7 @@ body {
   background-color: #d6dbdf;
 }
 .main {
-  background-color: #2e86c1;
+  background-color: hsl(0, 0%, 90%);
   height: 300px;
   width: 50%;
   border-radius: 10px;
