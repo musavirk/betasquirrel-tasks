@@ -21,7 +21,7 @@ const Index = () => {
             <Hireme />
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="danger" onClick={handleClose}>
+            <Button variant="danger" onClick={handleClose}></Button>
               Close
             </Button>
             <Button variant="success" onClick={handleClose}>
