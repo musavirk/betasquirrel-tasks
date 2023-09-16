@@ -1,12 +1,34 @@
+import { useState } from "react";
 import Main from "../layout/Main";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 import Hireme from "./HiremeForm";
 
 const Index = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       {" "}
       <Main>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Hire Me</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Hireme />
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="danger" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="success" onClick={handleClose}>
+              Submit
+            </Button>
+          </Modal.Footer>
+        </Modal>
         <Container responsive fluid className="infobx">
           <Row>
             <Col>
@@ -53,12 +75,13 @@ const Index = () => {
             <Row>
               <Col className="justify-content-center">
                 {" "}
-                <Button>Hire me</Button>
+                <Button variant="primary" onClick={handleShow}>
+                  Hire me
+                </Button>
               </Col>
             </Row>
           </Container>
         </Container>
-        <Hireme />
       </Main>
     </>
   );
