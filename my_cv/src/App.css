@@ -12,10 +12,16 @@
 .sideBar a svg {
   margin-right: 5px;
 }
+.infobx {
+  color: rgba(5, 5, 93, 0.9);
+}
 
 @media (max-width: 767px) {
+  .body {
+    overflow: auto;
+  }
   .sideBar {
     width: 50px;
-    height: 100 vh;
+    height: auto;
   }
 }

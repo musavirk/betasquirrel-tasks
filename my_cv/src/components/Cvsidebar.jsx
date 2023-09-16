@@ -55,6 +55,15 @@ const CvSidebar = () => {
             <li>Node JS</li>
             <li>React JS</li>
             <li>Vue JS</li>
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>Java Script</li>
+            <li>PHP</li>
+            {/* <li>Python</li>
+            <li>Laravel</li>
+            <li>Node JS</li>
+            <li>React JS</li>
+            <li>Vue JS</li> */}
           </ul>
         </span>
         <span className=" d-inline d-md-none">
