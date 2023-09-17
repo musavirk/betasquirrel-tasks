@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.6fb19c50.css",
-    "main.js": "/static/js/main.e91dc402.js",
-    "static/media/profile.jpg": "/static/media/profile.1324565a5a882f6cf83b.jpg",
-    "index.html": "/index.html",
-    "main.6fb19c50.css.map": "/static/css/main.6fb19c50.css.map",
-    "main.e91dc402.js.map": "/static/js/main.e91dc402.js.map"
+    "main.css": "/betasquirrel-tasks/static/css/main.6fb19c50.css",
+    "main.js": "/betasquirrel-tasks/static/js/main.0fc1d146.js",
+    "static/media/profile.jpg": "/betasquirrel-tasks/static/media/profile.1324565a5a882f6cf83b.jpg",
+    "index.html": "/betasquirrel-tasks/index.html",
+    "main.6fb19c50.css.map": "/betasquirrel-tasks/static/css/main.6fb19c50.css.map",
+    "main.0fc1d146.js.map": "/betasquirrel-tasks/static/js/main.0fc1d146.js.map"
   },
   "entrypoints": [
     "static/css/main.6fb19c50.css",
-    "static/js/main.e91dc402.js"
+    "static/js/main.0fc1d146.js"
   ]
 }
