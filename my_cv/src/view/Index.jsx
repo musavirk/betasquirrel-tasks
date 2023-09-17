@@ -32,7 +32,7 @@ const Index = () => {
         <Container responsive fluid className="infobx">
           <Row>
             <Col>
-              <h1>About</h1>
+              <h2>About</h2>
               <hr />
               <p>
                 I am a passionate Full Stack Developer who love to solve
@@ -47,7 +47,7 @@ const Index = () => {
           </Row>
           <Row>
             <Col>
-              <h1>Education</h1>
+              <h2>Education</h2>
               <hr />
               <p>
                 COLLEGE OF ENGINEERING ADOOR <br />
@@ -56,24 +56,77 @@ const Index = () => {
               </p>
             </Col>
             <Col>
-              <h1>Experience</h1>
+              <h2>Experience</h2>
               <hr />
               <p>
-                Full-stack <br />
+                Full-stack Developer <br />
                 betasquirrel <br /> Jan 2023 - Present (9 months)
               </p>
             </Col>
             <hr />
           </Row>
           <Row>
-            <Col></Col>
+            <h2>Projects</h2>
+
+            <hr />
+            <Col>
+              {" "}
+              <h3> ONE SCHOOL</h3>
+              <br />
+              <hr />
+              <p>
+                School management Software Designed Utilized modern technologies
+                and frameworks, including database management systems, front
+                -end development tools, and security protocols, to ensure
+                efficiency, reliability, and data integrity. Successfully
+                delivered a robust solution that significantly improved the
+                overall management and organization of the school's operations.
+              </p>
+            </Col>
+            <Col>
+              <h3>TRAFFIC RULE VIOLATION DETECTION</h3>
+              <hr />
+              <p>
+                Traffic management software Traffic rule violation detection is
+                a ML based software for detecting traffic rule violations. In
+                this project Used python as the main building block. For Object
+                detection YOLOV5 is used. Also number of ML algorithms are used.{" "}
+              </p>
+            </Col>
+            <Col>
+              <h3>CANTEEN MANAGEMENT SYSTEM</h3>
+              <hr />
+              <p>
+                Canteen management software Canteen management system is website
+                for managing Orders in a canteen. In this project front end is
+                created By using HTML,CSS and JavaScript and Back end is
+              </p>
+            </Col>
+            <hr />
           </Row>
-          <Row>
-            <Col></Col>
-          </Row>
-          <Container flex-column>
+
+          <Container flex-column className="justify-content-center">
             <Row>
-              <Col className="justify-content-center">
+              <Col>
+                <p>
+                  ➢ REST API Development with PHP/Laravel <br />➢ API
+                  Development using Node JS
+                  <br /> ➢ Implement Different API to React JS
+                  <br /> ➢ UX Designing and Prototyping with Figma
+                  <br /> ➢ UI Design and Development
+                  <br /> ➢ Responsive Designing
+                  <br /> ➢ Git Branching and Pull Request Review Workflow <br />
+                  ➢ Relational Database Design
+                  <br /> ➢ API Documentation using Postman
+                  <br /> ➢ Requirement Analysis and Documentation using
+                  Confluence
+                  <br /> ➢ Sprint Task Management using Agile Principles
+                  <br /> ➢ Code Formatting and Standardisation using Prettier
+                  <br /> ➢ Static Web Hosting using GitHub Pages
+                </p>
+              </Col>
+
+              <Col>
                 {" "}
                 <Button variant="primary" onClick={handleShow}>
                   Hire me

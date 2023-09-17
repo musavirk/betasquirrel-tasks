@@ -1,7 +1,10 @@
+.body {
+  overflow: auto;
+}
 .sideBar {
   width: 200px;
   color: #fff;
-  height: calc(100vh - 86px);
+  height: auto;
   background-color: rgb(53, 49, 49);
   padding-left: 10px;
 }
