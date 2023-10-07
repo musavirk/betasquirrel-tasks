@@ -1,0 +1,56 @@
+.App {
+  background: url("/src/assets/sky.jpg");
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  color: #fff;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+}
+.search-bx {
+  display: flex;
+  justify-content: space-between;
+}
+.search-bx input {
+  width: 35vw;
+  border: none;
+  height: 35px;
+}
+.current-weather {
+  color: #fff;
+}
+.loc-temp {
+  display: flex;
+  flex-direction: column;
+}
+.location {
+  font-size: 3rem;
+}
+.temp-des {
+  display: flex;
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.temp-des span {
+  font-size: 6rem;
+}
+.date {
+  font-size: 1rem;
+}
+.forcast-bx {
+  background: #214c63;
+  border-radius: 10px;
+  height: 120px;
+  overflow-x: auto;
+}
+.forcast-bx::-webkit-scrollbar {
+  display: none;
+}
